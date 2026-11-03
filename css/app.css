@@ -1,0 +1,93 @@
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior-y: auto;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+html {
+  opacity: 1 !important;
+  visibility: visible !important;
+  min-height: 100% !important;
+  overflow-y: scroll !important;
+}
+
+body {
+  min-height: 100vh !important;
+  height: auto !important;
+  overflow-y: visible !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbc3d7;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7b7486;
+}
+
+header nav[data-active-classes] {
+  flex-shrink: 0;
+}
+
+header nav[data-active-classes] > a {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.material-symbols-filled {
+  font-variation-settings: "FILL" 1;
+}
+
+.monthly-adherence-progress {
+  width: 93.3%;
+}
+
+.daily-adherence-progress {
+  width: 92%;
+}
+
+.clinic-map-background {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCllYFG4u1u0nxzdvDZH31y8slITILFpJVGKb_CWVggtfDfy--4BqWccURnJlzHzSdLDYVgu2KDX6UP0IdiMzI4yfPisJyMKpkiiCfHWPeH3-IFjA-TJcTJAteTNN2pxIMoEuPlp92RfTao92kwSYOE_jzQHfmjVlR3zzanKFXzaSHRycdRDmJ1Bn5orRaE1ee-OEmLKJT6H7AfygbEg86SqzyMPTQJPhOt9X3WAot_piBwjrr40jY_wg");
+}
+
+[data-logout] {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+}
+
+header .group:hover [data-logout],
+header .group:focus-within [data-logout] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (hover: none) {
+  header .group [data-logout] {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

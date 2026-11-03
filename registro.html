@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="description"
+      content="Crea tu perfil o accede a tu espacio Healthy."
+    />
+    <title>Acceso | Healthy</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="image.png/screen.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/registro.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"
+  >
+    <header class="border-b border-surface-container-high bg-surface">
+      <div
+        class="mx-auto flex h-20 max-w-[1200px] items-center justify-between gap-space-md px-margin"
+      >
+        <a
+          class="flex items-center gap-space-sm text-primary no-underline"
+          href="index.html"
+        >
+          <span class="material-symbols-outlined text-[28px]">health_and_safety</span>
+          <span class="flex flex-col">
+            <span class="font-headline-sm text-headline-sm leading-none">Healthy</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Bienestar &amp; Salud Sexual</span>
+          </span>
+        </a>
+        <a
+          class="inline-flex items-center gap-space-xs rounded-full px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant transition-colors hover:bg-surface-container-low"
+          href="index.html"
+        >
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Volver al inicio
+        </a>
+      </div>
+    </header>
+
+    <main class="auth-main flex flex-1 items-center px-margin py-space-xl">
+      <div
+        class="auth-layout mx-auto grid w-full max-w-[1000px] items-center gap-space-xl lg:grid-cols-[1fr_440px]"
+      >
+        <section class="auth-intro">
+          <p
+            class="mb-space-sm inline-flex items-center gap-space-xs rounded-full bg-secondary-container px-space-md py-space-xs font-label-md text-label-md text-on-secondary-container"
+          >
+            <span class="material-symbols-outlined text-[16px]">lock</span>
+            Tu espacio privado
+          </p>
+          <h1 class="mb-space-md max-w-xl font-headline-xl text-headline-xl text-on-surface">
+            Bienvenido a un espacio pensado para ti.
+          </h1>
+          <p class="max-w-lg font-body-lg text-body-lg text-on-surface-variant">
+            Crea tu perfil o vuelve a tus herramientas de bienestar desde un
+            acceso sencillo y discreto.
+          </p>
+          <div class="mt-space-xl flex flex-col gap-space-sm text-on-surface-variant">
+            <p class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-secondary">verified_user</span>
+              Elige un alias que no revele tu identidad.
+            </p>
+            <p class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-primary">visibility_off</span>
+              Evita guardar tu contraseña en dispositivos compartidos.
+            </p>
+          </div>
+        </section>
+
+        <section
+          aria-labelledby="auth-title"
+          class="auth-panel rounded-xl border border-surface-container-high bg-surface-container-lowest p-space-lg sm:p-space-xl"
+        >
+          <div class="mb-space-lg">
+            <h2
+              class="font-headline-md text-headline-md text-on-surface"
+              id="auth-title"
+            >
+              Accede a tu espacio
+            </h2>
+            <p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              Usa un alias y una contraseña segura.
+            </p>
+          </div>
+
+          <div
+            aria-label="Tipo de acceso"
+            class="auth-tabs mb-space-lg grid grid-cols-2 rounded-full bg-surface-container-low p-space-xs"
+            role="tablist"
+          >
+            <button
+              aria-controls="register-panel"
+              aria-selected="true"
+              class="auth-tab rounded-full px-space-sm py-space-sm font-label-md text-label-md transition-colors"
+              id="register-tab"
+              role="tab"
+              type="button"
+            >
+              Crear cuenta
+            </button>
+            <button
+              aria-controls="login-panel"
+              aria-selected="false"
+              class="auth-tab rounded-full px-space-sm py-space-sm font-label-md text-label-md transition-colors"
+              id="login-tab"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Iniciar sesión
+            </button>
+          </div>
+
+          <div
+            aria-labelledby="register-tab"
+            id="register-panel"
+            role="tabpanel"
+          >
+            <form class="flex flex-col gap-space-md" id="register-form">
+              <label class="auth-field-label" for="register-alias">Alias</label>
+              <input
+                autocomplete="nickname"
+                class="auth-field -mt-space-sm"
+                id="register-alias"
+                maxlength="32"
+                name="alias"
+                placeholder="Tu nombre dentro de Healthy"
+                required
+              />
+
+              <label class="auth-field-label" for="register-avatar">Foto de perfil</label>
+              <div class="avatar-upload-row -mt-space-sm">
+                <img
+                  alt="Vista previa de la foto de perfil"
+                  class="avatar-preview"
+                  id="register-avatar-preview"
+                  src="friendly_and_welcoming_illustrated_modern_avatar_portrait_of_a_diverse_person/foto.png"
+                />
+                <div class="avatar-upload-control">
+                  <input
+                    accept="image/*"
+                    class="auth-field"
+                    id="register-avatar"
+                    name="avatar"
+                    type="file"
+                  />
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">
+                    Opcional. La foto se guarda en este dispositivo.
+                  </p>
+                </div>
+              </div>
+
+              <label class="auth-field-label" for="register-email">Correo electrónico</label>
+              <input
+                autocomplete="email"
+                class="auth-field -mt-space-sm"
+                id="register-email"
+                name="email"
+                placeholder="nombre@correo.com"
+                required
+                type="email"
+              />
+
+              <label class="auth-field-label" for="register-password">Contraseña</label>
+              <input
+                autocomplete="new-password"
+                class="auth-field -mt-space-sm"
+                id="register-password"
+                minlength="8"
+                name="password"
+                placeholder="Mínimo 8 caracteres"
+                required
+                type="password"
+              />
+
+              <label class="auth-field-label" for="register-confirm-password">Repite la contraseña</label>
+              <input
+                autocomplete="new-password"
+                class="auth-field -mt-space-sm"
+                id="register-confirm-password"
+                name="confirm-password"
+                placeholder="Vuelve a escribirla"
+                required
+                type="password"
+              />
+
+              <button
+                class="mt-space-xs inline-flex w-full items-center justify-center gap-space-xs rounded-full bg-primary px-space-lg py-space-sm font-label-lg text-label-lg text-on-primary transition-colors hover:bg-primary-container"
+                type="submit"
+              >
+                <span class="material-symbols-outlined text-[18px]">person_add</span>
+                Crear perfil
+              </button>
+            </form>
+          </div>
+
+          <div
+            aria-labelledby="login-tab"
+            hidden
+            id="login-panel"
+            role="tabpanel"
+          >
+            <form class="flex flex-col gap-space-md" id="login-form">
+              <label class="auth-field-label" for="login-email">Correo electrónico</label>
+              <input
+                autocomplete="email"
+                class="auth-field -mt-space-sm"
+                id="login-email"
+                name="email"
+                placeholder="nombre@correo.com"
+                required
+                type="email"
+              />
+
+              <label class="auth-field-label" for="login-password">Contraseña</label>
+              <input
+                autocomplete="current-password"
+                class="auth-field -mt-space-sm"
+                id="login-password"
+                name="password"
+                placeholder="Tu contraseña"
+                required
+                type="password"
+              />
+
+              <button
+                class="mt-space-xs inline-flex w-full items-center justify-center gap-space-xs rounded-full bg-primary px-space-lg py-space-sm font-label-lg text-label-lg text-on-primary transition-colors hover:bg-primary-container"
+                type="submit"
+              >
+                <span class="material-symbols-outlined text-[18px]">login</span>
+                Iniciar sesión
+              </button>
+            </form>
+          </div>
+
+          <p
+            aria-live="polite"
+            class="auth-status mt-space-md rounded-lg bg-surface-container-low px-space-md py-space-sm font-body-sm text-body-sm text-on-surface-variant"
+            hidden
+            id="auth-status"
+          ></p>
+          <p class="mt-space-md text-center font-label-sm text-label-sm text-on-surface-variant">
+            Este acceso todavía no verifica cuentas ni almacena credenciales.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/registro.js"></script>
+  </body>
+</html>

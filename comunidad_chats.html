@@ -1,0 +1,1027 @@
+<!doctype html>
+<html
+  lang="es"
+  data-stitch-orig-opacity="1"
+  data-stitch-anim-opacity="true"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tu Espacio | Bienestar &amp; Salud Sexual</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="image.png/screen.png" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"
+  >
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-[1200px] mx-auto px-margin flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-md shrink-0">
+          <img
+            alt="Healthy Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGPbVhqhosjm842sZCUuI9HDGHE2wewjDr2zQaAomxPhAxXi5682-ALc3vFKD7QyR9xvDc6jYc7oPO9qA4FnHqUHGq8GiIRr7z9IIDJLAVcHAG6mMwhiKnrDtnxuKdKILBH4br-HKApD65Ajy6wb7ailFIBlNdsCmF_sKIvNckgHOT7rJ6edjPiVqDOx5b8qtvAhHANnAB0b72JVGgnnXtXgFq1C_lQ9qU-jAfW2oWxyGb9uhL6fdS7mgh4pTpHvYQ8hU"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none"
+              >Healthy</span
+            ><span
+              class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs leading-none"
+              >Bienestar &amp; Salud Sexual</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full"
+          data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-full"
+        >
+          <a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            href="index.html"
+            >Inicio</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="mi-bienestar"
+            href="bienestar.html"
+            >Mi Bienestar</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="agenda-y-controles"
+            href="agenda_pruebas_tratamientos.html"
+            >Agenda &amp; Controles</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="biblioteca"
+            href="biblioteca.html"
+            >Biblioteca</a
+          ><a
+            aria-current="page"
+            class="px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-label-lg rounded-full"
+            data-path="comunidad-segura"
+            href="comunidad_chats.html"
+            >Comunidad Segura</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm shrink-0">
+          <button
+            class="flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all text-left"
+            title="Cerrar o camuflar al instante"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[18px]">security</span
+            ><span class="font-label-md text-label-md hidden sm:inline"
+              >Modo discreto</span
+            ></button
+          ><button
+            aria-label="Notificaciones"
+            class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all relative"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]"
+              >notifications</span
+            ><span
+              class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"
+            ></span>
+          </button>
+          <div class="flex items-center gap-space-sm pl-space-xs group relative">
+            <div class="flex flex-col items-end hidden md:flex">
+              <span
+                class="font-label-md text-label-md text-on-surface leading-tight"
+                data-user-name
+                >Invitado</span
+              ><span
+                class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-space-xs py-0.5 rounded-full mt-0.5 leading-none"
+                >Identidad protegida</span
+              >
+            </div>
+            <img
+              alt="Profile"
+              class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed"
+              data-user-avatar
+              src="friendly_and_welcoming_illustrated_modern_avatar_portrait_of_a_diverse_person/foto.png"
+            />
+            <button
+              aria-label="Cerrar sesión"
+              class="absolute right-0 top-full z-[60] mt-1 inline-flex items-center gap-space-xs rounded-lg bg-surface-container-lowest px-space-md py-space-sm text-on-surface shadow-lg ring-1 ring-surface-container-high"
+              data-logout
+              hidden
+              title="Cerrar sesión"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[18px]">logout</span>
+              <span class="font-label-md text-label-md">Cerrar sesión</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 flex-1 bg-surface">
+      <div class="max-w-[1200px] mx-auto px-margin py-space-xl">
+        <div class="flex flex-col w-full">
+          <!-- Subtle Ambient Glowing Orbs behind the layout -->
+          <div class="relative w-full overflow-hidden">
+            <div
+              class="absolute -top-12 -left-20 w-80 h-80 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none -z-10"
+            ></div>
+            <div
+              class="absolute top-48 -right-24 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"
+            ></div>
+            <!-- Section 1: Encabezado de la Comunidad -->
+            <div class="flex flex-col gap-space-lg mb-space-xl">
+              <div
+                class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+              >
+                <div class="flex flex-col max-w-2xl">
+                  <div class="flex items-center gap-space-xs mb-space-xs">
+                    <span
+                      class="inline-flex items-center gap-1.5 px-space-md py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md"
+                    >
+                      <span
+                        class="w-2 h-2 rounded-full bg-secondary animate-pulse"
+                      ></span>
+                      Espacio Seguro &amp; Encriptado
+                    </span>
+                    <span
+                      class="text-on-surface-variant font-label-sm text-label-sm"
+                      >Protocolo Zero-Identity</span
+                    >
+                  </div>
+                  <h1
+                    class="font-headline-xl text-headline-xl text-on-surface tracking-tight"
+                  >
+                    Comunidad Segura &amp; Foros Anónimos
+                  </h1>
+                  <p
+                    class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs leading-relaxed"
+                  >
+                    Tu cuenta está protegida. En todos los hilos y comentarios
+                    apareces como
+                    <strong class="text-primary font-semibold"
+                      >«Usuario anónimo»</strong
+                    >. Libre de prejuicios, con respeto absoluto y
+                    acompañamiento colectivo.
+                  </p>
+                </div>
+                <!-- Metric pill summary -->
+                <div
+                  class="flex items-center gap-space-md bg-surface-container-low px-space-lg py-space-sm rounded-lg shadow-sm"
+                >
+                  <div class="flex flex-col">
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-bold"
+                      >100%</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >Sin rastreo</span
+                    >
+                  </div>
+                  <div class="h-8 w-px bg-surface-container-high"></div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-headline-sm text-headline-sm text-secondary font-bold"
+                      >&lt; 15 min</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >Tiempo moderación</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Banner de convivencia / Safety Shield Callout -->
+              <div
+                class="relative overflow-hidden rounded-lg bg-surface-container-lowest p-space-lg shadow-sm"
+              >
+                <div
+                  class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md"
+                >
+                  <div class="flex items-start gap-space-md">
+                    <div
+                      class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-primary"
+                    >
+                      <span class="material-symbols-outlined text-[26px]"
+                        >verified_user</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="flex items-center gap-space-xs">
+                        <span
+                          class="font-label-lg text-label-lg text-on-surface font-bold"
+                          >Anónimo no significa sin moderación</span
+                        >
+                        <span
+                          class="px-space-xs py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm"
+                          >Regla de oro</span
+                        >
+                      </div>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                      >
+                        Cuidamos este espacio entre todas, todes y todos.
+                        Disponemos de filtros activos en tiempo real y
+                        moderación humana empática para neutralizar cualquier
+                        agresión, odio o desinformación en segundos.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    class="shrink-0 flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container font-semibold transition-colors"
+                    type="button"
+                  >
+                    <span class="">Ver código ético</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_forward</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Section 2: Pestañas de filtrado y Botón de Acción -->
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg"
+            >
+              <!-- Tabs -->
+              <div
+                class="flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-full overflow-x-auto"
+              >
+                <button
+                  class="flex items-center gap-1.5 px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >local_fire_department</span
+                  >
+                  Popular
+                </button>
+                <button
+                  class="flex items-center gap-1.5 px-space-md py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >schedule</span
+                  >
+                  Recientes
+                </button>
+                <button
+                  class="flex items-center gap-1.5 px-space-md py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >chat_bubble_outline</span
+                  >
+                  Sin respuesta
+                </button>
+                <button
+                  class="flex items-center gap-1.5 px-space-md py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >bookmark_border</span
+                  >
+                  Guardados
+                </button>
+              </div>
+              <!-- Action Button with Floating Tooltip Preview -->
+              <div class="relative group">
+                <button
+                  class="w-full sm:w-auto flex items-center justify-center gap-space-sm bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-space-lg py-3 rounded-full shadow-[0_8px_20px_-4px_rgba(107,56,212,0.35)] transition-all"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >add_circle</span
+                  >
+                  <span class="">+ Crear nueva publicación anónima</span>
+                </button>
+                <!-- Static Tooltip Indicator -->
+                <div
+                  class="hidden sm:flex absolute right-0 top-full mt-2 items-center gap-1.5 px-space-md py-1 bg-surface-container-highest text-on-surface rounded-full shadow-sm opacity-90 text-left pointer-events-none"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[15px]"
+                    >lock</span
+                  >
+                  <span class="font-label-sm text-label-sm"
+                    >Tu usuario real jamás será visible públicamente</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Main Layout Grid: Discussion Feed + Interactive Moderation Showcase -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start"
+            >
+              <!-- Section 3: Listado de Hilos de Discusión (8 cols on desktop) -->
+              <div class="lg:col-span-7 flex flex-col gap-space-md">
+                <!-- Hilo 1 -->
+                <article
+                  class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md transition-shadow relative"
+                >
+                  <!-- Card Header -->
+                  <div
+                    class="flex items-start justify-between gap-space-md mb-space-sm"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >person_outline</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-space-xs flex-wrap">
+                          <span
+                            class="font-label-lg text-label-lg text-on-surface font-semibold"
+                            >Usuario anónimo</span
+                          >
+                          <span
+                            class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold"
+                          >
+                            <span class="material-symbols-outlined text-[13px]"
+                              >check_circle</span
+                            >
+                            Publicación verificada
+                          </span>
+                        </div>
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface-variant"
+                          >Hace 2 horas • Moderado con IA segura</span
+                        >
+                      </div>
+                    </div>
+                    <!-- 3 Dots Context Menu Button -->
+                    <button
+                      class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"
+                      id="report-options-btn"
+                      title="Opciones del hilo"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >more_vert</span
+                      >
+                    </button>
+                  </div>
+                  <!-- Card Content -->
+                  <h2
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer mb-space-xs"
+                  >
+                    ¿Cómo hablar con mi pareja sobre hacerme una prueba de ITS
+                    juntos?
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md"
+                  >
+                    Llevamos unos meses saliendo y me gustaría que ambos nos
+                    hiciéramos un chequeo de rutina para mayor tranquilidad,
+                    pero no sé cómo plantearlo sin que suene a desconfianza o
+                    genere incomodidad innecesaria...
+                  </p>
+                  <!-- Card Footer & Metrics -->
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <span
+                        class="px-space-md py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold"
+                        >#Relaciones</span
+                      >
+                      <span
+                        class="px-space-md py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold"
+                        >#Prevención</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-space-md text-on-surface-variant"
+                    >
+                      <button
+                        class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >chat_bubble</span
+                        >
+                        <span class="">12 respuestas</span>
+                      </button>
+                      <button
+                        class="flex items-center gap-1 text-tertiary-container hover:text-tertiary transition-colors font-label-md text-label-md"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >favorite</span
+                        >
+                        <span class="">34 apoyos</span>
+                      </button>
+                      <button
+                        class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors"
+                        title="Guardar"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <!-- Hilo 2 -->
+                <article
+                  class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md transition-shadow relative"
+                >
+                  <!-- Card Header -->
+                  <div
+                    class="flex items-start justify-between gap-space-md mb-space-sm"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >sentiment_neutral</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-space-xs">
+                          <span
+                            class="font-label-lg text-label-lg text-on-surface font-semibold"
+                            >Usuario anónimo</span
+                          >
+                        </div>
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface-variant"
+                          >Hace 4 horas • Foro de Apoyo Afectivo</span
+                        >
+                      </div>
+                    </div>
+                    <!-- 3 Dots Context Menu Button -->
+                    <button
+                      class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"
+                      title="Opciones del hilo"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >more_vert</span
+                      >
+                    </button>
+                  </div>
+                  <!-- Card Content -->
+                  <h2
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer mb-space-xs"
+                  >
+                    Tengo miedo de contarle algo sobre mi identidad a mi
+                    familia. ¿Algún consejo?
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md"
+                  >
+                    Siento que es el momento pero no sé por dónde empezar o qué
+                    apoyo tener a mano por si la reacción no es la esperada. Me
+                    da mucha ansiedad pensar en el después y en perder mi
+                    espacio seguro.
+                  </p>
+                  <!-- Card Footer & Metrics -->
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <span
+                        class="px-space-md py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold"
+                        >#Identidad</span
+                      >
+                      <span
+                        class="px-space-md py-1 rounded-full bg-surface-container-low text-tertiary font-label-sm text-label-sm font-semibold"
+                        >#SaludEmocional</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-space-md text-on-surface-variant"
+                    >
+                      <button
+                        class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >chat_bubble</span
+                        >
+                        <span class="">8 respuestas</span>
+                      </button>
+                      <button
+                        class="flex items-center gap-1 text-tertiary-container hover:text-tertiary transition-colors font-label-md text-label-md"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >favorite</span
+                        >
+                        <span class="">21 apoyos</span>
+                      </button>
+                      <button
+                        class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors"
+                        title="Guardar"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <!-- Hilo 3 -->
+                <article
+                  class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md transition-shadow relative"
+                >
+                  <!-- Card Header -->
+                  <div
+                    class="flex items-start justify-between gap-space-md mb-space-sm"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >medical_services</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-space-xs">
+                          <span
+                            class="font-label-lg text-label-lg text-on-surface font-semibold"
+                            >Usuario anónimo</span
+                          >
+                        </div>
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface-variant"
+                          >Hace 6 horas • Orientación Clínica Libre</span
+                        >
+                      </div>
+                    </div>
+                    <!-- 3 Dots Context Menu Button -->
+                    <button
+                      class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"
+                      title="Opciones del hilo"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >more_vert</span
+                      >
+                    </button>
+                  </div>
+                  <!-- Card Content -->
+                  <h2
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold hover:text-primary transition-colors cursor-pointer mb-space-xs"
+                  >
+                    ¿Alguien sabe dónde encontrar información clara y centros de
+                    acceso a PrEP?
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md"
+                  >
+                    He leído sobre la profilaxis preexposición pero no sé cómo
+                    solicitarla en el sistema público o qué controles previos
+                    piden. ¿Te exigen ser de un grupo específico o es universal?
+                  </p>
+                  <!-- Card Footer & Metrics -->
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <span
+                        class="px-space-md py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold"
+                        >#Prevención</span
+                      >
+                      <span
+                        class="px-space-md py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold"
+                        >#ITS</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-space-md text-on-surface-variant"
+                    >
+                      <button
+                        class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >chat_bubble</span
+                        >
+                        <span class="">5 respuestas</span>
+                      </button>
+                      <button
+                        class="flex items-center gap-1 text-tertiary-container hover:text-tertiary transition-colors font-label-md text-label-md"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >favorite</span
+                        >
+                        <span class="">16 apoyos</span>
+                      </button>
+                      <button
+                        class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors"
+                        title="Guardar"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >bookmark_border</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <!-- Informative micro-banner for user reassurance -->
+                <div
+                  class="flex items-center gap-space-md p-space-md rounded-lg bg-surface-container-low"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[24px]"
+                    >lock_reset</span
+                  >
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Las direcciones IP y metadatos son desvinculados
+                    permanentemente cada 24 horas. Tu privacidad es
+                    innegociable.
+                  </p>
+                </div>
+              </div>
+              <!-- Section 4: Componente Modal de Moderación Activo & Panel Lateral Seguro (5 cols on desktop) -->
+              <div
+                class="lg:col-span-5 flex flex-col gap-space-md sticky top-24"
+                id="report-modal-box"
+              >
+                <!-- Live Moderation Modal Showcase -->
+                <div
+                  class="relative bg-surface-container-lowest rounded-xl p-space-lg shadow-xl overflow-hidden"
+                >
+                  <!-- Decorative Top Glow Line -->
+                  <div
+                    class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-tertiary-container to-secondary"
+                  ></div>
+                  <div
+                    class="flex items-center justify-between mb-space-sm pt-space-xs"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <div
+                        class="w-8 h-8 rounded-full bg-error-container text-error flex items-center justify-center"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >flag</span
+                        >
+                      </div>
+                      <span
+                        class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                        >Reportar publicación</span
+                      >
+                    </div>
+                    <span
+                      class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium"
+                      >Confidencial</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-md"
+                  >
+                    ¿Por qué quieres reportar esta publicación? Selecciona el
+                    motivo para activar la intervención prioritaria:
+                  </p>
+                  <!-- Report Options (Radio Group) -->
+                  <form
+                    class="flex flex-col gap-space-xs mb-space-md"
+                    id="report-form"
+                  >
+                    <label
+                      class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group"
+                    >
+                      <div class="flex items-center gap-space-sm">
+                        <input
+                          checked=""
+                          class="w-4 h-4 text-primary focus:ring-primary accent-primary cursor-pointer"
+                          name="report_reason"
+                          type="radio"
+                          value="acoso"
+                        />
+                        <span
+                          class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors"
+                          >Acoso</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px]"
+                        >visibility_off</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group"
+                    >
+                      <div class="flex items-center gap-space-sm">
+                        <input
+                          class="w-4 h-4 text-primary focus:ring-primary accent-primary cursor-pointer"
+                          name="report_reason"
+                          type="radio"
+                          value="discriminacion"
+                        />
+                        <span
+                          class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors"
+                          >Discriminación (LGTBIfobia, racismo, etc.)</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px]"
+                        >front_hand</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group"
+                    >
+                      <div class="flex items-center gap-space-sm">
+                        <input
+                          class="w-4 h-4 text-primary focus:ring-primary accent-primary cursor-pointer"
+                          name="report_reason"
+                          type="radio"
+                          value="sexual_inapropiado"
+                        />
+                        <span
+                          class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors"
+                          >Contenido sexual inapropiado o explícito no
+                          consentido</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px]"
+                        >warning</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group"
+                    >
+                      <div class="flex items-center gap-space-sm">
+                        <input
+                          class="w-4 h-4 text-primary focus:ring-primary accent-primary cursor-pointer"
+                          name="report_reason"
+                          type="radio"
+                          value="informacion_peligrosa"
+                        />
+                        <span
+                          class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors"
+                          >Información peligrosa o bulo médico</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px]"
+                        >medical_information</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group"
+                    >
+                      <div class="flex items-center gap-space-sm">
+                        <input
+                          class="w-4 h-4 text-primary focus:ring-primary accent-primary cursor-pointer"
+                          name="report_reason"
+                          type="radio"
+                          value="spam"
+                        />
+                        <span
+                          class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors"
+                          >Spam o autopromoción comercial</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px]"
+                        >block</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group"
+                    >
+                      <div class="flex items-center gap-space-sm">
+                        <input
+                          class="w-4 h-4 text-primary focus:ring-primary accent-primary cursor-pointer"
+                          name="report_reason"
+                          type="radio"
+                          value="otro"
+                        />
+                        <span
+                          class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors"
+                          >Otro motivo</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px]"
+                        >more_horiz</span
+                      >
+                    </label>
+                    <!-- Human Moderation Guarantee Notice -->
+                    <div
+                      class="mt-space-xs p-space-sm rounded-lg bg-surface-container flex items-start gap-space-xs"
+                    >
+                      <span
+                        class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5"
+                        >verified</span
+                      >
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface leading-tight"
+                      >
+                        <strong>Garantía de respuesta rápida:</strong> Los
+                        reportes son revisados por un equipo humano
+                        especializado en menos de <strong>15 minutos</strong>.
+                        La persona reportada no sabrá quién generó este aviso.
+                      </p>
+                    </div>
+                    <div
+                      class="hidden mt-space-xs p-space-sm rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center gap-1.5"
+                      id="report-status-msg"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >task_alt</span
+                      >
+                      Reporte enviado con éxito. Nuestro equipo ya lo está
+                      analizando.
+                    </div>
+                    <!-- Modal Action Buttons -->
+                    <div
+                      class="flex items-center justify-end gap-space-sm mt-space-md pt-space-xs"
+                    >
+                      <button
+                        class="px-space-md py-2 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high transition-colors"
+                        type="button"
+                      >
+                        Cancelar
+                      </button>
+                      <button
+                        class="flex items-center gap-1.5 px-space-lg py-2 rounded-full bg-error text-on-error font-label-lg text-label-lg shadow-md hover:bg-tertiary transition-all"
+                        type="submit"
+                      >
+                        <span class="material-symbols-outlined text-[18px]"
+                          >send</span
+                        >
+                        Enviar reporte a moderación
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- Accompanying Support & Safety Widget -->
+                <div
+                  class="bg-surface-container-low rounded-xl p-space-lg shadow-sm"
+                >
+                  <div
+                    class="flex items-center gap-space-xs text-primary mb-space-xs"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >diversity_1</span
+                    >
+                    <span class="font-label-lg text-label-lg font-bold"
+                      >Líneas de ayuda inmediata</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-md"
+                  >
+                    Si estás pasando por una crisis emocional o necesitas
+                    orientación médica confidencial urgente:
+                  </p>
+                  <div class="flex flex-col gap-space-xs">
+                    <a
+                      class="flex items-center justify-between p-space-sm rounded bg-surface-container-lowest hover:bg-surface-container-high transition-colors"
+                      href="tel:028"
+                    >
+                      <div class="flex items-center gap-space-xs">
+                        <span
+                          class="font-label-lg text-label-lg font-bold text-on-surface"
+                          >Línea Arcoíris 028</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded-full"
+                          >Gratis 24/7</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px]"
+                        >call</span
+                      >
+                    </a>
+                    <a
+                      class="flex items-center justify-between p-space-sm rounded bg-surface-container-lowest hover:bg-surface-container-high transition-colors"
+                      href="#"
+                    >
+                      <div class="flex items-center gap-space-xs">
+                        <span
+                          class="font-label-lg text-label-lg font-bold text-on-surface"
+                          >Chat con Psicología de Guardia</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-primary-fixed-variant bg-primary-fixed px-2 py-0.5 rounded-full"
+                          >En línea</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px]"
+                        >support_agent</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside
+      class="fixed bottom-6 right-6 z-50 max-w-sm flex flex-col items-end gap-space-sm"
+    >
+      <div
+        class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_12px_32px_-4px_rgba(139,92,246,0.12)] border border-surface-container-high/60 hidden group-hover:block transition-all max-w-xs"
+      >
+        <div class="flex items-center gap-space-xs mb-space-xs">
+          <span class="material-symbols-outlined text-primary text-[20px]"
+            >psychology</span
+          ><span
+            class="font-label-md text-label-md text-on-surface font-semibold"
+            >Asistente de Bienestar</span
+          ><span
+            class="ml-auto font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-space-xs py-0.5 rounded-full"
+            >Educativo &amp; confidencial</span
+          >
+        </div>
+        <p
+          class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm"
+        >
+          ¿Tienes dudas sobre prevención, autocuidado o tratamientos? Te
+          orientamos con rigor y calidez.
+        </p>
+        <div
+          class="bg-surface-container-low rounded p-space-xs flex items-start gap-space-xs"
+        >
+          <span
+            class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5"
+            >info</span
+          ><span
+            class="font-label-sm text-label-sm text-on-surface-variant leading-tight"
+            >Esta información es educativa y no reemplaza una valoración médica
+            profesional.</span
+          >
+        </div>
+      </div>
+      <button
+        class="flex items-center gap-space-sm bg-primary text-on-primary pl-space-md pr-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(139,92,246,0.35)] hover:bg-primary-container hover:text-on-primary-container transition-all"
+        type="button"
+      >
+        <span class="material-symbols-outlined text-[22px]"
+          >volunteer_activism</span
+        >
+        <div class="flex flex-col text-left">
+          <span class="font-label-md text-label-md font-semibold leading-tight"
+            >Asistente de Bienestar</span
+          ><span class="font-label-sm text-label-sm opacity-90 leading-tight"
+            >Educativo &amp; confidencial</span
+          >
+        </div>
+      </button>
+    </aside>
+    <footer class="w-full bg-surface-container-low mt-auto py-space-xl">
+      <div
+        class="max-w-[1200px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"
+      >
+        <div class="flex flex-col gap-space-xs">
+          <span class="font-headline-sm text-headline-sm text-primary"
+            >Healthy</span
+          >
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+            Tu sexualidad. Tu salud. Tu espacio. Plataforma segura, inclusiva y
+            libre de juicios para el autocuidado integral.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-space-md">
+          <span
+            class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-space-md py-space-xs rounded-full"
+            >100% Confidencial y Cifrado</span
+          ><span class="font-label-sm text-label-sm text-on-surface-variant"
+            >© 2024 Healthy. Todos los derechos reservados.</span
+          >
+        </div>
+      </div>
+    </footer>
+      <script src="js/app.js"></script>
+  </body>
+</html>

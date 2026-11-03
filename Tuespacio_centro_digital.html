@@ -1,0 +1,1431 @@
+<!doctype html>
+<html lang="es" data-quick-escape="true">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tu Espacio | Bienestar &amp; Salud Sexual</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="image.png/screen.png" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"
+  >
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-[1200px] mx-auto px-margin flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-md shrink-0">
+          <img
+            alt="Healthy Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYTJ_9uT_emdNySSsLsCUzcMHPBKY_uOd4zfIcx4KvZf0aGHBR0ZQZNssYw5cmWrhowE2TrzdHVp5SZYCP_rTwMc4l6b_kbeUt8zrS4eC7eCjeStnGAdKtAB-MOjRQAve5MrM9YHCnFH0xXf_Jxe3ukBN11b2KYoGq5pRRb_2DrDcsngJN6yZLfH6xHDKXVTBctXxbhG8RI45YB-R8ZEwIXEA0nerEIuHq6oGuzbheOA3_KST631pd7hRyaVcD5Er3IB8"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none"
+              >Healthy</span
+            ><span
+              class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs leading-none"
+              >Bienestar &amp; Salud Sexual</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full"
+          data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-full"
+        >
+          <a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            href="index.html"
+            >Inicio</a
+          ><a
+            aria-current="page"
+            class="px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-label-lg rounded-full"
+            data-path="mi-bienestar"
+            href="bienestar.html"
+            >Mi Bienestar</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="agenda-y-controles"
+            href="agenda_pruebas_tratamientos.html"
+            >Agenda &amp; Controles</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="biblioteca"
+            href="biblioteca.html"
+            >Biblioteca</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="comunidad-segura"
+            href="comunidad_chats.html"
+            >Comunidad Segura</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm shrink-0">
+          <button
+            class="flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all text-left"
+            title="Cerrar o camuflar al instante"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[18px]">security</span
+            ><span class="font-label-md text-label-md hidden sm:inline"
+              >Modo discreto</span
+            ></button
+          ><button
+            aria-label="Notificaciones"
+            class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all relative"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]"
+              >notifications</span
+            ><span
+              class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"
+            ></span>
+          </button>
+          <div class="flex items-center gap-space-sm pl-space-xs group relative">
+            <div class="flex flex-col items-end hidden md:flex">
+              <span
+                class="font-label-md text-label-md text-on-surface leading-tight"
+                data-user-name
+                >Invitado</span
+              ><span
+                class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-space-xs py-0.5 rounded-full mt-0.5 leading-none"
+                </span
+              >
+            </div>
+            <img
+              alt="Profile"
+              class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed"
+              src="friendly_and_welcoming_illustrated_modern_avatar_portrait_of_a_diverse_person/foto.png"
+            />
+            <button
+              aria-label="Cerrar sesión"
+              class="absolute right-0 top-full z-[60] mt-1 inline-flex items-center gap-space-xs rounded-lg bg-surface-container-lowest px-space-md py-space-sm text-on-surface shadow-lg ring-1 ring-surface-container-high"
+              data-logout
+              hidden
+              title="Cerrar sesión"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[18px]">logout</span>
+              <span class="font-label-md text-label-md">Cerrar sesión</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 flex-1 bg-surface">
+      <div class="max-w-[1200px] mx-auto px-margin py-space-xl">
+        <div class="flex flex-col w-full opacity-100">
+          <!-- Micro Banner Superior -->
+          <div
+            class="w-full bg-surface-container-low/70 py-space-xs px-margin border-b border-surface-container-high/30"
+          >
+            <div
+              class="max-w-[1200px] mx-auto flex items-center justify-between"
+            >
+              <div class="flex items-center gap-space-xs mx-auto md:mx-0">
+                <span
+                  class="w-2 h-2 rounded-full bg-secondary animate-pulse"
+                ></span>
+                <p
+                  class="font-label-md text-label-md text-on-surface-variant text-center"
+                >
+                  Plataforma 100% anónima, cifrada y libre de juicios
+                  <span class="hidden sm:inline">•</span>
+                  <span class="text-primary font-semibold"
+                    >Salud sexual integral para todxs</span
+                  >
+                </p>
+              </div>
+              <div
+                class="hidden md:flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm"
+              >
+                <span class="flex items-center gap-1"
+                  ><span
+                    class="material-symbols-outlined text-[15px] text-secondary"
+                    >verified_user</span
+                  >
+                  Certificación Médica Colegiada</span
+                >
+                <span class="">•</span>
+                <span class="">Servicio Gratuito y Comunitario</span>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Section -->
+          <section class="relative pt-space-lg pb-space-xl overflow-hidden">
+            <!-- Ambient glowing orbs -->
+            <div
+              class="absolute -top-12 -left-20 w-96 h-96 rounded-full bg-primary-fixed/40 blur-3xl pointer-events-none -z-10"
+            ></div>
+            <div
+              class="absolute top-1/3 -right-24 w-80 h-80 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none -z-10"
+            ></div>
+            <div
+              class="absolute -bottom-16 left-1/3 w-96 h-96 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none -z-10"
+            ></div>
+            <div
+              class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+            >
+              <!-- Columna de Texto -->
+              <div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+                <!-- Trust badge with brand icon -->
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low shadow-sm"
+                >
+                  <svg
+                    class="w-5 h-5 shrink-0"
+                    fill="none"
+                    viewBox="0 0 100 100"
+                  >
+                    <path
+                      d="M50 85 C20 70 8 48 18 28 C26 12 45 16 50 28 C55 16 74 12 82 28 C92 48 80 70 50 85 Z"
+                      fill="#8455ef"
+                      opacity="0.9"
+                    ></path>
+                    <path
+                      d="M50 28 C55 16 74 12 82 28 C92 48 80 70 50 85 C55 70 70 52 64 36 C60 28 54 26 50 28 Z"
+                      fill="#ff7a70"
+                      opacity="0.95"
+                    ></path>
+                    <path
+                      d="M50 28 C54 36 50 48 44 58 C38 68 45 80 50 85 C46 72 52 60 58 50 C62 42 56 32 50 28 Z"
+                      fill="#4edea3"
+                      opacity="0.9"
+                    ></path>
+                  </svg>
+                  <span
+                    class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase"
+                    >Healthy Seguro &amp; Confiable</span
+                  >
+                  <span
+                    class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-[10px] font-bold uppercase"
+                    >v2.4 Live</span
+                  >
+                </div>
+                <h1
+                  class="font-headline-xl text-headline-xl text-on-surface tracking-tight leading-tight"
+                >
+                  Tu sexualidad.<br />
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-container to-secondary"
+                    >Tu salud. Tu espacio Healthy.</span
+                  >
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
+                >
+                  El primer centro digital integral diseñado para el bienestar
+                  afectivo-sexual: controles sin estigma, seguimiento médico de
+                  prevención (PrEP/ITS), información rigurosa y una comunidad
+                  que te cuida sin juzgar.
+                </p>
+                <!-- CTAs -->
+                <div
+                  class="flex flex-wrap items-center gap-space-sm w-full sm:w-auto pt-space-xs"
+                >
+                  <a
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-[0_8px_20px_-4px_rgba(107,56,212,0.35)] hover:bg-primary-container transition-all"
+                    href="#comenzar"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >lock</span
+                    >
+                    Comenzar en modo confidencial
+                  </a>
+                  <a
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-surface-container-low text-on-surface font-label-lg text-label-lg rounded-full hover:bg-surface-container-high transition-all"
+                    href="#servicios"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[20px] text-secondary"
+                      >explore</span
+                    >
+                    Conocer servicios y apoyo
+                  </a>
+                </div>
+                <!-- Badges de Confianza -->
+                <div
+                  class="grid grid-cols-3 gap-space-xs pt-space-sm w-full max-w-lg"
+                >
+                  <div
+                    class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container-lowest shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary text-[20px]"
+                      >enhanced_encryption</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight"
+                        >100% Cifrado</span
+                      >
+                      <span
+                        class="text-[10px] text-on-surface-variant leading-tight"
+                        >Cero rastreadores</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container-lowest shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[20px]"
+                      >verified</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight"
+                        >Comité Clínico</span
+                      >
+                      <span
+                        class="text-[10px] text-on-surface-variant leading-tight"
+                        >Guías oficiales</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container-lowest shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-tertiary-container text-[20px]"
+                      >diversity_3</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight"
+                        >LGBT+ &amp; Diverso</span
+                      >
+                      <span
+                        class="text-[10px] text-on-surface-variant leading-tight"
+                        >Espacio afirmativo</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Columna Visual: Interactive Preview Dashboard -->
+              <div class="lg:col-span-5 relative">
+                <div
+                  class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_16px_40px_-8px_rgba(107,56,212,0.12)] flex flex-col gap-space-md relative z-10"
+                >
+                  <!-- Mock Header de la app -->
+                  <div
+                    class="flex items-center justify-between pb-space-xs border-b border-surface-container-high/40"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <div
+                        class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-xs"
+                      >
+                        AN
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-md text-label-md text-on-surface"
+                          >Mi Sesión Privada</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5"
+                        >
+                          <span
+                            class="w-1.5 h-1.5 rounded-full bg-secondary"
+                          ></span>
+                          Blindaje activo
+                        </span>
+                      </div>
+                    </div>
+                    <span
+                      class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm"
+                    >
+                      Alias: #Nova_88
+                    </span>
+                  </div>
+                  <!-- Módulo 1: Monitor de PrEP / Chequeos -->
+                  <div
+                    class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary text-[18px]"
+                          >medication</span
+                        >
+                        Pauta de Autocuidado &amp; PrEP
+                      </span>
+                      <span
+                        class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-bold"
+                        >Al día</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-body-sm text-on-surface-variant"
+                    >
+                      <span class="">Dosis diaria tomada: 09:30 AM</span>
+                      <span class="text-primary font-medium"
+                        >92% adherencia</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden"
+                    >
+                      <div
+                        class="bg-primary h-full rounded-full daily-adherence-progress"
+                      ></div>
+                    </div>
+                  </div>
+                  <!-- Módulo 2: Calendario discreto de chequeos -->
+                  <div class="grid grid-cols-2 gap-space-xs">
+                    <div
+                      class="p-space-sm rounded-lg bg-surface-container-high/40 flex flex-col"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                        >Próximo Chequeo</span
+                      >
+                      <span
+                        class="font-headline-sm text-headline-sm text-on-surface mt-1"
+                        >24 Nov</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-secondary font-medium"
+                        >Clínica Comunitaria A.</span
+                      >
+                    </div>
+                    <div
+                      class="p-space-sm rounded-lg bg-surface-container-high/40 flex flex-col"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                        >Último Serológico</span
+                      >
+                      <span
+                        class="font-headline-sm text-headline-sm text-on-surface mt-1"
+                        >100% OK</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-primary font-medium"
+                        >Panel completo no reactivo</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Módulo 3: Test rápido y consultoría -->
+                  <div
+                    class="p-space-sm rounded-lg bg-gradient-to-r from-primary-fixed to-surface-container-low flex items-center justify-between"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary text-[24px]"
+                        >support_agent</span
+                      >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-md text-label-md text-on-primary-fixed font-semibold"
+                          >Consejería en Vivo</span
+                        >
+                        <span class="text-[11px] text-on-surface-variant"
+                          >Sexólogos e infectólogos en línea</span
+                        >
+                      </div>
+                    </div>
+                    <button
+                      class="px-space-sm py-1 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-primary-container transition-all"
+                      type="button"
+                    >
+                      Consultar
+                    </button>
+                  </div>
+                </div>
+                <!-- Float Pill decorative -->
+                <div
+                  class="absolute -bottom-4 -left-6 bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-lg flex items-center gap-space-xs z-20"
+                >
+                  <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                  <span class="font-label-sm text-label-sm text-on-surface"
+                    >Cero cookies invasivas</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Showcase de 4 Áreas Clave -->
+          <section class="py-space-xl" id="servicios">
+            <div class="max-w-[1200px] mx-auto flex flex-col gap-space-lg">
+              <div
+                class="flex flex-col items-center text-center gap-space-xs max-w-2xl mx-auto"
+              >
+                <span
+                  class="font-label-md text-label-md text-primary bg-primary-fixed px-space-md py-1 rounded-full font-bold uppercase tracking-wider"
+                >
+                  Ecosistema Cuidador
+                </span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Todo lo que necesitas para tu salud sexual en un solo lugar
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Diseñado con médicos especialistas, activistas comunitarios y
+                  psicólogos sexólogos para garantizar un entorno empático y sin
+                  prejuicios.
+                </p>
+              </div>
+              <!-- Bento Grid de Pilares -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md"
+              >
+                <!-- Tarjeta 1 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group"
+                >
+                  <div class="flex flex-col gap-space-sm">
+                    <div
+                      class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >event_available</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface"
+                    >
+                      Controles y Chequeos Sin Vergüenza
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Seguimiento inteligente de tu pauta PrEP/PEP,
+                      recordatorios neutros en tu móvil y directorio
+                      geolocalizado de centros de salud inclusivos.
+                    </p>
+                  </div>
+                  <div class="pt-space-md flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold"
+                      >Directorio +350 puntos</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary text-[20px]"
+                      >arrow_forward</span
+                    >
+                  </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group"
+                >
+                  <div class="flex flex-col gap-space-sm">
+                    <div
+                      class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary group-hover:scale-110 transition-transform"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >mood</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface"
+                    >
+                      Diario Íntimo de Bienestar
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Registra síntomas corporales, niveles de energía, momentos
+                      de conexión y salud emocional sin temor a fugas de datos.
+                    </p>
+                  </div>
+                  <div class="pt-space-md flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-primary font-semibold"
+                      >Cifrado local en tu equipo</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-secondary text-[20px]"
+                      >arrow_forward</span
+                    >
+                  </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group"
+                >
+                  <div class="flex flex-col gap-space-sm">
+                    <div
+                      class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >auto_stories</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface"
+                    >
+                      Biblioteca &amp; Guías Sin Tabúes
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Artículos revisados por infectólogos y sexólogos sobre
+                      métodos de barrera, placer seguro, salud trans, chemsex y
+                      derechos sexuales.
+                    </p>
+                  </div>
+                  <div class="pt-space-md flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-tertiary font-semibold"
+                      >+180 Guías Clínicas</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-tertiary text-[20px]"
+                      >arrow_forward</span
+                    >
+                  </div>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group"
+                >
+                  <div class="flex flex-col gap-space-sm">
+                    <div
+                      class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >forum</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface"
+                    >
+                      Comunidad &amp; Círculos Seguros
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Foros moderados 24/7 por profesionales para resolver
+                      dudas, compartir vivencias y recibir acompañamiento entre
+                      pares con anonimato total.
+                    </p>
+                  </div>
+                  <div class="pt-space-md flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-primary font-semibold"
+                      >Moderación profesional</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary text-[20px]"
+                      >arrow_forward</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Sección Interactiva: Cómo Funciona (Paso a Paso) -->
+          <section
+            class="py-space-xl bg-surface-container-low/50 rounded-xl my-space-lg"
+          >
+            <div class="max-w-[1200px] mx-auto px-margin">
+              <div
+                class="flex flex-col items-center text-center gap-space-xs mb-space-xl"
+              >
+                <span
+                  class="font-label-md text-label-md text-secondary bg-secondary-container px-space-md py-1 rounded-full font-bold uppercase"
+                >
+                  Flujo de Respeto Absoluto
+                </span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Tu salud en tus propios términos, en 3 simples pasos
+                </h2>
+              </div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative"
+              >
+                <!-- Paso 1 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col items-start gap-space-sm relative"
+                >
+                  <span
+                    class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-sm flex items-center justify-center"
+                    >1</span
+                  >
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface">
+                    Crea tu Perfil Cifrado
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Sin nombre real, sin número de teléfono obligatorio y sin
+                    vincular redes sociales. Escoge un alias anónimo y genera tu
+                    llave de acceso privada.
+                  </p>
+                  <div
+                    class="mt-auto pt-space-sm flex items-center gap-2 text-primary font-label-sm"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >no_accounts</span
+                    >
+                    <span class="">Identidad disociada garantizada</span>
+                  </div>
+                </div>
+                <!-- Paso 2 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col items-start gap-space-sm relative"
+                >
+                  <span
+                    class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-headline-sm flex items-center justify-center"
+                    >2</span
+                  >
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface">
+                    Ajusta tus Rutinas
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Configura recordatorios de medicación o citas con
+                    notificaciones camufladas (por ejemplo: "Consejo de
+                    bienestar diario" o "Recordatorio de hidratación").
+                  </p>
+                  <div
+                    class="mt-auto pt-space-sm flex items-center gap-2 text-secondary font-label-sm"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >visibility_off</span
+                    >
+                    <span class="">Alertas 100% discretas</span>
+                  </div>
+                </div>
+                <!-- Paso 3 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col items-start gap-space-sm relative"
+                >
+                  <span
+                    class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container font-headline-sm flex items-center justify-center"
+                    >3</span
+                  >
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface">
+                    Accede al Acompañamiento
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Resuelve dudas con especialistas colegiados vía chat
+                    anónimo, solicita kits de cribado en farmacias asociadas o
+                    participa en foros comunitarios.
+                  </p>
+                  <div
+                    class="mt-auto pt-space-sm flex items-center gap-2 text-tertiary-container font-label-sm"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >health_and_safety</span
+                    >
+                    <span class="">Respaldo clínico 24/7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Sección de Seguridad, Ética y Confidencialidad -->
+          <section class="py-space-xl">
+            <div class="max-w-[1200px] mx-auto">
+              <div
+                class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+              >
+                <div class="lg:col-span-6 flex flex-col gap-space-md">
+                  <div
+                    class="inline-flex items-center gap-2 text-primary font-label-md"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >shield</span
+                    >
+                    <span class="uppercase font-bold tracking-wider"
+                      >Manifiesto de Ciberseguridad</span
+                    >
+                  </div>
+                  <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                    Tu privacidad no es una opción negociable: es el núcleo de
+                    Healthy.
+                  </h2>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Entendemos que la salud sexual y afectiva requiere un
+                    blindaje absoluto. Nuestra infraestructura ha sido auditada
+                    por expertos independientes para garantizar que nadie,
+                    excepto tú, acceda a tu información.
+                  </p>
+                  <div class="flex flex-col gap-space-sm">
+                    <div class="flex items-start gap-space-sm">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5"
+                        >check_circle</span
+                      >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-headline-sm text-body-lg text-on-surface font-semibold"
+                          >Salida Rápida de Emergencia ("Botón de Pánico")</span
+                        >
+                        <span
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                          >Presiona la tecla Escape o el icono de escudo para
+                          redirigir la pestaña instantáneamente a un portal
+                          neutro de noticias.</span
+                        >
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-space-sm">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5"
+                        >check_circle</span
+                      >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-headline-sm text-body-lg text-on-surface font-semibold"
+                          >Cero Venta de Datos ni Píxeles de Rastreo</span
+                        >
+                        <span
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                          >No utilizamos rastreadores de publicidad comercial ni
+                          compartimos historiales con aseguradoras o
+                          terceros.</span
+                        >
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-space-sm">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5"
+                        >check_circle</span
+                      >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-headline-sm text-body-lg text-on-surface font-semibold"
+                          >Cifrado de Base de Datos Zero-Knowledge</span
+                        >
+                        <span
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                          >Tus notas del diario y síntomas están encriptados con
+                          claves generadas en tu propio dispositivo.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:col-span-6 flex flex-col gap-space-md">
+                  <div
+                    class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md"
+                  >
+                    <h4
+                      class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs"
+                    >
+                      <span class="material-symbols-outlined text-primary"
+                        >security_update_good</span
+                      >
+                      Estado de las Protecciones del Sistema
+                    </h4>
+                    <div class="space-y-space-sm">
+                      <div>
+                        <div
+                          class="flex justify-between text-body-sm mb-1 font-medium"
+                        >
+                          <span class="text-on-surface"
+                            >Cifrado de Datos en Tránsito (TLS 1.3)</span
+                          >
+                          <span class="text-secondary font-bold"
+                            >Activo / 100%</span
+                          >
+                        </div>
+                        <div
+                          class="w-full bg-surface-container-high h-2 rounded-full"
+                        >
+                          <div
+                            class="bg-secondary h-2 rounded-full w-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="flex justify-between text-body-sm mb-1 font-medium"
+                        >
+                          <span class="text-on-surface"
+                            >Auditoría Ética &amp; Consentimiento
+                            Informado</span
+                          >
+                          <span class="text-secondary font-bold"
+                            >Verificado</span
+                          >
+                        </div>
+                        <div
+                          class="w-full bg-surface-container-high h-2 rounded-full"
+                        >
+                          <div
+                            class="bg-secondary h-2 rounded-full w-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="flex justify-between text-body-sm mb-1 font-medium"
+                        >
+                          <span class="text-on-surface"
+                            >Anonimización de Foros Comunitarios</span
+                          >
+                          <span class="text-secondary font-bold">Total</span>
+                        </div>
+                        <div
+                          class="w-full bg-surface-container-high h-2 rounded-full"
+                        >
+                          <div
+                            class="bg-secondary h-2 rounded-full w-full"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center gap-space-sm"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[28px]"
+                        >lock_clock</span
+                      >
+                      <p
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                      >
+                        Tu historial de navegación dentro de esta plataforma
+                        puede borrarse con un solo clic desde tus ajustes
+                        confidenciales.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Testimonios / Voces Reales -->
+          <section class="py-space-xl">
+            <div class="max-w-[1200px] mx-auto flex flex-col gap-space-lg">
+              <div
+                class="flex flex-col items-center text-center gap-space-xs max-w-2xl mx-auto"
+              >
+                <span
+                  class="font-label-md text-label-md text-primary bg-primary-fixed px-space-md py-1 rounded-full font-bold uppercase"
+                >
+                  Voces de la Comunidad
+                </span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Personas que ya cuidan de sí mismas sin culpa
+                </h2>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+                <!-- Testimonio 1 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between"
+                >
+                  <div class="flex flex-col gap-space-sm">
+                    <div class="flex text-amber-500 gap-0.5">
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface italic">
+                      "Siempre me daba miedo hacerme las pruebas rutinarias por
+                      miradas de juicio en las consultas estándar. En Healthy
+                      encontré una clínica comunitaria empática y un seguimiento
+                      de PrEP impecable."
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-space-sm pt-space-md">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-xs"
+                    >
+                      M.G.
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-label-md text-on-surface font-semibold"
+                        >Marcos G., 28 años</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                        >Usuario de PrEP • Madrid</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonio 2 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between"
+                >
+                  <div class="flex flex-col gap-space-sm">
+                    <div class="flex text-amber-500 gap-0.5">
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface italic">
+                      "El modo discreto me da una tranquilidad inmensa si reviso
+                      mis citas en el metro o en la oficina. Las guías sobre
+                      salud no binaria y placer son las mejores que he leído en
+                      español."
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-space-sm pt-space-md">
+                    <div
+                      class="w-10 h-10 rounded-full bg-secondary-fixed text-secondary font-bold flex items-center justify-center text-xs"
+                    >
+                      A.R.
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-label-md text-on-surface font-semibold"
+                        >Alex R., 24 años</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                        >Miembro activo en foros • Barcelona</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonio 3 -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between"
+                >
+                  <div class="flex flex-col gap-space-sm">
+                    <div class="flex text-amber-500 gap-0.5">
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >star</span
+                      >
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface italic">
+                      "Pude resolver una urgencia con la PEP tras un percance
+                      gracias a la guía de acción inmediata y al chat de
+                      emergencia. Su rapidez y calidez humana me cambiaron la
+                      vida."
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-space-sm pt-space-md">
+                    <div
+                      class="w-10 h-10 rounded-full bg-tertiary-fixed text-tertiary font-bold flex items-center justify-center text-xs"
+                    >
+                      S.L.
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-label-md text-on-surface font-semibold"
+                        >Sam L., 31 años</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                        >Atención en urgencia PEP • Valencia</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Alianzas y Respaldo Clínico -->
+          <section
+            class="py-space-lg border-t border-b border-surface-container-high/30 my-space-md"
+          >
+            <div
+              class="max-w-[1200px] mx-auto flex flex-col items-center gap-space-md"
+            >
+              <span
+                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold"
+              >
+                Con el respaldo y colaboración de entidades sanitarias y
+                comunitarias
+              </span>
+              <div
+                class="flex flex-wrap items-center justify-center gap-space-xl opacity-75"
+              >
+                <div
+                  class="flex items-center gap-2 font-headline-sm text-on-surface-variant"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[28px]"
+                    >local_hospital</span
+                  >
+                  <span class="font-semibold tracking-tight"
+                    >Red Salud Sexual Inclusiva</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-2 font-headline-sm text-on-surface-variant"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[28px]"
+                    >biotech</span
+                  >
+                  <span class="font-semibold tracking-tight"
+                    >Comité de Infectología Preventiva</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-2 font-headline-sm text-on-surface-variant"
+                >
+                  <span
+                    class="material-symbols-outlined text-tertiary text-[28px]"
+                    >diversity_1</span
+                  >
+                  <span class="font-semibold tracking-tight"
+                    >Federación Diversidad &amp; Derechos</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-2 font-headline-sm text-on-surface-variant"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[28px]"
+                    >psychology_alt</span
+                  >
+                  <span class="font-semibold tracking-tight"
+                    >Asoc. Sexología Afectiva</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- FAQ Interactivo (Acordeón accesible sin scripts externos) -->
+          <section class="py-space-xl">
+            <div class="max-w-[900px] mx-auto flex flex-col gap-space-lg">
+              <div class="flex flex-col items-center text-center gap-space-xs">
+                <span
+                  class="font-label-md text-label-md text-primary bg-primary-fixed px-space-md py-1 rounded-full font-bold uppercase"
+                >
+                  Preguntas Frecuentes
+                </span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Claridad y honestidad sobre tus dudas más habituales
+                </h2>
+              </div>
+              <div class="flex flex-col gap-space-sm" id="faq-accordion">
+                <!-- Item 1 -->
+                <details
+                  class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm group [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer"
+                  open=""
+                >
+                  <summary
+                    class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface select-none"
+                  >
+                    <span class=""
+                      >¿Mis datos médicos o registros son visibles para otras
+                      personas?</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary transition-transform group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant pt-space-sm"
+                  >
+                    En absoluto. Toda tu información personal, controles y
+                    diario íntimo se almacenan bajo cifrado de extremo a extremo
+                    en tu dispositivo o en servidores disociados de identidad.
+                    Ni otros usuarios ni anunciantes tienen acceso a ellos.
+                  </p>
+                </details>
+                <!-- Item 2 -->
+                <details
+                  class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm group [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer"
+                >
+                  <summary
+                    class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface select-none"
+                  >
+                    <span class="">¿Cómo funciona el "Modo Discreto"?</span>
+                    <span
+                      class="material-symbols-outlined text-primary transition-transform group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant pt-space-sm"
+                  >
+                    Al pulsar el botón del escudo o la tecla Escape (Esc) en tu
+                    ordenador, la pantalla se camufla instantáneamente con una
+                    búsqueda genérica neutra (ej. clima o noticias científicas),
+                    silenciando la pestaña y borrando el historial inmediato si
+                    lo deseas.
+                  </p>
+                </details>
+                <!-- Item 3 -->
+                <details
+                  class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm group [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer"
+                >
+                  <summary
+                    class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface select-none"
+                  >
+                    <span class=""
+                      >¿Cómo puedo acceder a pruebas gratuitas o de bajo
+                      coste?</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary transition-transform group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant pt-space-sm"
+                  >
+                    En nuestra sección de "Agenda &amp; Controles" dispones de
+                    un mapa interactivo con más de 350 centros de salud
+                    comunitarios, check-points de ONGs y centros de ITS donde
+                    puedes solicitar cribados serológicos rápidos gratuitos o
+                    subvencionados según tu localidad.
+                  </p>
+                </details>
+                <!-- Item 4 -->
+                <details
+                  class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm group [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer"
+                >
+                  <summary
+                    class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface select-none"
+                  >
+                    <span class=""
+                      >¿Es una plataforma inclusiva para cualquier identidad y
+                      orientación?</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary transition-transform group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant pt-space-sm"
+                  >
+                    Sí. Tu Espacio fue co-creado por y para la comunidad LGBTQ+,
+                    pero está abierto a cualquier persona que busque información
+                    científica, cuidados de placer y prevención sin juicios
+                    moralistas, binarismos limitantes ni patologización.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </section>
+          <!-- Gran CTA Final Envolvente -->
+          <section class="my-space-xl" id="comenzar">
+            <div class="max-w-[1200px] mx-auto">
+              <div
+                class="relative rounded-xl p-space-xl overflow-hidden bg-gradient-to-br from-primary via-primary-container to-secondary text-on-primary shadow-xl"
+              >
+                <!-- Background organic shapes -->
+                <div
+                  class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-white/10 blur-2xl pointer-events-none"
+                ></div>
+                <div
+                  class="absolute -left-16 -bottom-16 w-80 h-80 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"
+                ></div>
+                <div
+                  class="relative z-10 max-w-2xl flex flex-col items-start gap-space-md"
+                >
+                  <div
+                    class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-space-md py-1 rounded-full text-xs font-semibold uppercase tracking-wider"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >lock_reset</span
+                    >
+                    Sin tarjeta de crédito • Sin datos sensibles
+                  </div>
+                  <h2 class="font-headline-xl text-headline-xl leading-tight">
+                    Toma el control de tu bienestar con calma, empatía y
+                    privacidad total.
+                  </h2>
+                  <p
+                    class="font-body-lg text-body-lg text-on-primary-container/90"
+                  >
+                    Únete a miles de personas que gestionan su salud sexual de
+                    forma proactiva, informada y libre de estigmas.
+                  </p>
+                  <div
+                    class="flex flex-wrap items-center gap-space-sm pt-space-xs w-full sm:w-auto"
+                  >
+                    <button
+                      class="w-full sm:w-auto px-space-lg py-space-sm rounded-full bg-surface-container-lowest text-primary font-headline-sm text-label-lg shadow-lg hover:bg-surface-container-low transition-all"
+                      type="button"
+                    >
+                      Crear cuenta anónima gratuita
+                    </button>
+                    <a
+                      class="w-full sm:w-auto px-space-lg py-space-sm rounded-full bg-white/15 text-on-primary font-headline-sm text-label-lg hover:bg-white/25 transition-all text-center"
+                      href="#servicios"
+                    >
+                      Explorar recursos públicos
+                    </a>
+                  </div>
+                  <p
+                    class="font-label-sm text-label-sm text-on-primary-container/70 pt-space-xs"
+                  >
+                    * Registro confidencial en menos de 45 segundos con tu
+                    propio alias protegido.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Teléfonos de Emergencia / Recursos 24/7 (Sección de Cuidado Rápido) -->
+          <section
+            class="py-space-md bg-tertiary-fixed/40 rounded-lg my-space-md"
+          >
+            <div
+              class="max-w-[1200px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"
+            >
+              <div class="flex items-center gap-space-sm">
+                <span
+                  class="material-symbols-outlined text-tertiary text-[32px]"
+                  >emergency</span
+                >
+                <div class="flex flex-col">
+                  <span
+                    class="font-label-lg text-label-lg text-on-tertiary-fixed font-bold"
+                    >¿Riesgo reciente en las últimas 72 horas? (PEP
+                    Urgente)</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-tertiary-fixed-variant"
+                    >La Profilaxis Post-Exposición debe iniciarse lo antes
+                    posible. No estás solx.</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-space-sm">
+                <a
+                  class="px-space-md py-space-xs rounded-full bg-tertiary text-on-tertiary font-label-md text-label-md flex items-center gap-1 shadow-sm hover:bg-tertiary-container transition-all"
+                  href="tel:900111222"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >call</span
+                  >
+                  Línea PEP Urgente Gratuita
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+      </div>
+    </main>
+    <aside
+      class="fixed bottom-6 right-6 z-50 max-w-sm flex flex-col items-end gap-space-sm"
+    >
+      <div
+        class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_12px_32px_-4px_rgba(139,92,246,0.12)] border border-surface-container-high/60 hidden group-hover:block transition-all max-w-xs"
+      >
+        <div class="flex items-center gap-space-xs mb-space-xs">
+          <span class="material-symbols-outlined text-primary text-[20px]"
+            >psychology</span
+          ><span
+            class="font-label-md text-label-md text-on-surface font-semibold"
+            >Asistente de Bienestar</span
+          ><span
+            class="ml-auto font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-space-xs py-0.5 rounded-full"
+            >Educativo &amp; confidencial</span
+          >
+        </div>
+        <p
+          class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm"
+        >
+          ¿Tienes dudas sobre prevención, autocuidado o tratamientos? Te
+          orientamos con rigor y calidez.
+        </p>
+        <div
+          class="bg-surface-container-low rounded p-space-xs flex items-start gap-space-xs"
+        >
+          <span
+            class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5"
+            >info</span
+          ><span
+            class="font-label-sm text-label-sm text-on-surface-variant leading-tight"
+            >Esta información es educativa y no reemplaza una valoración médica
+            profesional.</span
+          >
+        </div>
+      </div>
+      <button
+        class="flex items-center gap-space-sm bg-primary text-on-primary pl-space-md pr-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(139,92,246,0.35)] hover:bg-primary-container hover:text-on-primary-container transition-all"
+        type="button"
+      >
+        <span class="material-symbols-outlined text-[22px]"
+          >volunteer_activism</span
+        >
+        <div class="flex flex-col text-left">
+          <span class="font-label-md text-label-md font-semibold leading-tight"
+            >Asistente de Bienestar</span
+          ><span class="font-label-sm text-label-sm opacity-90 leading-tight"
+            >Educativo &amp; confidencial</span
+          >
+        </div>
+      </button>
+    </aside>
+    <footer class="w-full bg-surface-container-low mt-auto py-space-xl">
+      <div
+        class="max-w-[1200px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"
+      >
+        <div class="flex flex-col gap-space-xs">
+          <span class="font-headline-sm text-headline-sm text-primary"
+            >Healthy</span
+          >
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+            Tu sexualidad. Tu salud. Tu espacio Healthy. Plataforma segura,
+            inclusiva y libre de juicios para el autocuidado integral.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-space-md">
+          <span
+            class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-space-md py-space-xs rounded-full"
+            >100% Confidencial y Cifrado</span
+          ><span class="font-label-sm text-label-sm text-on-surface-variant"
+            >© 2024 Healthy. Todos los derechos reservados.</span
+          >
+        </div>
+      </div>
+    </footer>
+      <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1136 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tu Espacio | Bienestar &amp; Salud Sexual</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="image.png/screen.png" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"
+  >
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-[1200px] mx-auto px-margin flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-md shrink-0">
+          <img
+            alt="Tu Espacio Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuChYYMX4PYYklsEVJSCRs_pKzXsK6uQKzAckYIqBkiGIv7lqB9kcclVwj1e5kwinKrqRWHzB8DYVWEFMtRqPNVij5t8KP-EkLF_KCrgnbdrZr2M_WtF0_-IYJingd0axmb_IrD-CbA18Nilf3JK9iI9IZZJshxluw46O0l2ZhBhREwX5JcwN1wFBIkvjGcwL4TM7eAXgnGQUuGQ-XS6eUSjWGaZMGcXMIHA5BENLNz-JXgR4DOZt1p0cQ"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none"
+              >Tu Espacio</span
+            ><span
+              class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs leading-none"
+              >Bienestar &amp; Salud Sexual</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full"
+          data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-full"
+        >
+          <a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            href="index.html"
+            >Inicio</a
+          ><a
+            aria-current="page"
+            class="px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-label-lg rounded-full"
+            data-path="mi-bienestar"
+            href="bienestar.html"
+            >Mi Bienestar</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="agenda-y-controles"
+            href="agenda_pruebas_tratamientos.html"
+            >Agenda &amp; Controles</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="biblioteca"
+            href="biblioteca.html"
+            >Biblioteca</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="comunidad-segura"
+            href="comunidad_chats.html"
+            >Comunidad Segura</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm shrink-0">
+          <button
+            class="flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all text-left"
+            title="Cerrar o camuflar al instante"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[18px]">security</span
+            ><span class="font-label-md text-label-md hidden sm:inline"
+              >Modo discreto</span
+            ></button
+          ><button
+            aria-label="Notificaciones"
+            class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all relative"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]"
+              >notifications</span
+            ><span
+              class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"
+            ></span>
+          </button>
+          <div class="flex items-center gap-space-sm pl-space-xs group relative">
+            <div class="flex flex-col items-end hidden md:flex">
+              <span
+                class="font-label-md text-label-md text-on-surface leading-tight"
+                data-user-name
+                >Invitado</span
+              ><span
+                class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-space-xs py-0.5 rounded-full mt-0.5 leading-none"
+                ></span
+              >
+            </div>
+            <img
+              alt="Profile"
+              class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed"
+              data-user-avatar
+              src="friendly_and_welcoming_illustrated_modern_avatar_portrait_of_a_diverse_person/foto.png"
+            />
+            <button
+              aria-label="Cerrar sesión"
+              class="absolute right-0 top-full z-[60] mt-1 inline-flex items-center gap-space-xs rounded-lg bg-surface-container-lowest px-space-md py-space-sm text-on-surface shadow-lg ring-1 ring-surface-container-high"
+              data-logout
+              hidden
+              title="Cerrar sesión"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[18px]">logout</span>
+              <span class="font-label-md text-label-md">Cerrar sesión</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 flex-1 bg-surface">
+      <div class="max-w-[1200px] mx-auto px-margin py-space-xl">
+        <div class="flex flex-col w-full gap-space-xl">
+          <!-- Saludo Cálido y Atmósfera Ethereal -->
+          <section
+            class="relative rounded-xl bg-surface-container-lowest shadow-sm p-space-lg lg:p-space-xl overflow-hidden"
+          >
+            <div
+              class="absolute -top-24 -right-24 w-80 h-80 bg-primary-fixed-dim/30 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div
+              class="absolute -bottom-20 -left-20 w-72 h-72 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div
+              class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-lg"
+            >
+              <div class="max-w-2xl">
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-low text-secondary font-label-md text-label-md mb-space-sm"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >verified_user</span
+                  >
+                  <span>Espacio personal encriptado</span>
+                  <span
+                    class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"
+                  ></span>
+                  <span class="font-normal text-on-surface-variant"
+                    >Sin rastreadores de terceros</span
+                  >
+                </div>
+                <h1
+                  class="font-headline-xl text-headline-xl text-on-surface tracking-tight"
+                >
+                  Hola, <span class="text-primary" data-user-name>Invitado</span>. Este es tu
+                  espacio seguro.
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs"
+                >
+                  Tu sexualidad. Tu salud. Tu espacio.
+                  <span class="font-normal text-on-surface"
+                    >Un rincón íntimo para escucharte, cuidarte y tomar
+                    decisiones libres de estigmas.</span
+                  >
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-space-md shrink-0 bg-surface-container-low/70 backdrop-blur-sm p-space-md rounded-lg"
+              >
+                <div
+                  class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container"
+                >
+                  <span
+                    class="material-symbols-outlined text-[28px] material-symbols-filled"
+                    >spa</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider"
+                    >Racha de Autocuidado</span
+                  >
+                  <div class="flex items-baseline gap-space-xs">
+                    <span
+                      class="font-headline-md text-headline-md text-on-surface font-bold"
+                      >14 días</span
+                    >
+                    <span
+                      class="font-label-md text-label-md text-secondary font-semibold"
+                      >activo</span
+                    >
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >Controles e higiene al día</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Contenido Central: Bento Grid 12 Columnas -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start"
+          >
+            <!-- COLUMNA IZQUIERDA: Check-in Diario de Bienestar (7 Cols) -->
+            <div class="lg:col-span-7 flex flex-col gap-space-lg">
+              <!-- Card: Registro Diario Holístico -->
+              <section
+                class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-lg relative overflow-hidden"
+              >
+                <div class="flex items-center justify-between pb-space-xs">
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary"
+                    >
+                      <span class="material-symbols-outlined text-[22px]"
+                        >favorite</span
+                      >
+                    </div>
+                    <div>
+                      <h2
+                        class="font-headline-sm text-headline-sm text-on-surface"
+                      >
+                        Check-in Diario de Bienestar
+                      </h2>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        ¿Cómo te sientes en tu piel hoy? Registro íntimo y 100%
+                        privado.
+                      </p>
+                    </div>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm bg-surface-container-high px-space-sm py-1 rounded-full text-on-surface-variant"
+                    >Hoy, 18 Sept</span
+                  >
+                </div>
+                <!-- 1. Estado de Ánimo -->
+                <div class="flex flex-col gap-space-sm">
+                  <label
+                    class="font-label-lg text-label-lg text-on-surface flex items-center gap-space-xs"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[18px]"
+                      >sentiment_satisfied</span
+                    >
+                    <span>Estado de ánimo y energía íntima</span>
+                  </label>
+                  <div
+                    class="grid grid-cols-5 gap-space-xs sm:gap-space-sm"
+                    id="mood-selector"
+                  >
+                    <button
+                      class="mood-btn group flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low hover:bg-primary-fixed transition-all text-center focus:outline-none"
+                      data-mood="radiante"
+                      type="button"
+                    >
+                      <span
+                        class="text-2xl transform group-hover:scale-110 transition-transform"
+                        >✨</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface font-medium mt-1"
+                        >Radiante</span
+                      >
+                    </button>
+                    <button
+                      class="mood-btn active-mood group flex flex-col items-center justify-center p-space-sm rounded-lg bg-primary-container text-on-primary-container transition-all text-center focus:outline-none"
+                      data-mood="tranquilo"
+                      type="button"
+                    >
+                      <span
+                        class="text-2xl transform group-hover:scale-110 transition-transform"
+                        >🌿</span
+                      >
+                      <span class="font-label-sm text-label-sm font-medium mt-1"
+                        >Tranquilo</span
+                      >
+                    </button>
+                    <button
+                      class="mood-btn group flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low hover:bg-primary-fixed transition-all text-center focus:outline-none"
+                      data-mood="dudas"
+                      type="button"
+                    >
+                      <span
+                        class="text-2xl transform group-hover:scale-110 transition-transform"
+                        >💭</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface font-medium mt-1"
+                        >Con dudas</span
+                      >
+                    </button>
+                    <button
+                      class="mood-btn group flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low hover:bg-primary-fixed transition-all text-center focus:outline-none"
+                      data-mood="sensible"
+                      type="button"
+                    >
+                      <span
+                        class="text-2xl transform group-hover:scale-110 transition-transform"
+                        >🌸</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface font-medium mt-1"
+                        >Sensible</span
+                      >
+                    </button>
+                    <button
+                      class="mood-btn group flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low hover:bg-primary-fixed transition-all text-center focus:outline-none"
+                      data-mood="abrumado"
+                      type="button"
+                    >
+                      <span
+                        class="text-2xl transform group-hover:scale-110 transition-transform"
+                        >🌧️</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface font-medium mt-1"
+                        >Abrumado</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- 2. Actividad Sexual -->
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex items-center justify-between">
+                    <label
+                      class="font-label-lg text-label-lg text-on-surface flex items-center gap-space-xs"
+                    >
+                      <span
+                        class="material-symbols-outlined text-secondary text-[18px]"
+                        >motion_photos_on</span
+                      >
+                      <span>Actividad y vivencia (sin juicios ni tabúes)</span>
+                    </label>
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >Selección múltiple</span
+                    >
+                  </div>
+                  <div
+                    class="flex flex-wrap gap-space-xs sm:gap-space-sm"
+                    id="activity-selector"
+                  >
+                    <button
+                      class="toggle-pill active-pill px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center gap-space-xs transition-all"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >done</span
+                      >
+                      <span>Con pareja(s)</span>
+                    </button>
+                    <button
+                      class="toggle-pill px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-space-xs"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >self_improvement</span
+                      >
+                      <span>En solitario / autocuidado</span>
+                    </button>
+                    <button
+                      class="toggle-pill px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-space-xs"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >hotel</span
+                      >
+                      <span>Sin actividad</span>
+                    </button>
+                    <button
+                      class="toggle-pill active-pill px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center gap-space-xs transition-all"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >shield</span
+                      >
+                      <span>Con protección / barrera</span>
+                    </button>
+                    <button
+                      class="toggle-pill px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-space-xs"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >explore</span
+                      >
+                      <span>Prácticas nuevas</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- 3. Síntomas Corporales -->
+                <div class="flex flex-col gap-space-sm">
+                  <label
+                    class="font-label-lg text-label-lg text-on-surface flex items-center gap-space-xs"
+                  >
+                    <span
+                      class="material-symbols-outlined text-tertiary text-[18px]"
+                      >vital_signs</span
+                    >
+                    <span>Sensaciones corporales y síntomas</span>
+                  </label>
+                  <div
+                    class="flex flex-wrap gap-space-xs sm:gap-space-sm"
+                    id="symptoms-selector"
+                  >
+                    <button
+                      class="toggle-pill active-pill px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center gap-space-xs transition-all"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >check_circle</span
+                      >
+                      <span>Todo en orden</span>
+                    </button>
+                    <button
+                      class="toggle-pill px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all"
+                      type="button"
+                    >
+                      <span>Sin molestias</span>
+                    </button>
+                    <button
+                      class="toggle-pill px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all"
+                      type="button"
+                    >
+                      <span>Ligera irritación</span>
+                    </button>
+                    <button
+                      class="toggle-pill px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all"
+                      type="button"
+                    >
+                      <span>Flujo inusual</span>
+                    </button>
+                    <button
+                      class="toggle-pill px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all"
+                      type="button"
+                    >
+                      <span>Molestias al orinar</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Nota y Botón Guardar -->
+                <div
+                  class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-md"
+                >
+                  <div
+                    class="flex items-center gap-space-xs text-on-surface-variant"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >lock</span
+                    >
+                    <span class="font-label-sm text-label-sm"
+                      >Cifrado local seguro en este dispositivo</span
+                    >
+                  </div>
+                  <button
+                    class="w-full sm:w-auto px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs"
+                    id="save-log-btn"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >save</span
+                    >
+                    <span>Guardar registro confidencial</span>
+                  </button>
+                </div>
+              </section>
+              <!-- Hábitos & Kit de Autocuidado Diario -->
+              <section
+                class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container"
+                    >
+                      <span class="material-symbols-outlined text-[22px]"
+                        >health_and_safety</span
+                      >
+                    </div>
+                    <div>
+                      <h2
+                        class="font-headline-sm text-headline-sm text-on-surface"
+                      >
+                        Hábitos &amp; Prevención Activa
+                      </h2>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        Insumos verificados y continuidad de tu bienestar.
+                      </p>
+                    </div>
+                  </div>
+                  <span
+                    class="font-label-md text-label-md text-secondary font-semibold"
+                    >Semana 38</span
+                  >
+                </div>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-xs"
+                >
+                  <!-- Card Kit de Autocuidado -->
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between gap-space-md"
+                  >
+                    <div>
+                      <div
+                        class="flex items-center justify-between mb-space-xs"
+                      >
+                        <span
+                          class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-primary"
+                          >Insumos básicos</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm bg-surface-container-highest px-space-xs py-0.5 rounded-full text-on-surface"
+                          >Auditado</span
+                        >
+                      </div>
+                      <h3
+                        class="font-headline-sm text-headline-sm text-on-surface"
+                      >
+                        Kit de autocuidado
+                      </h3>
+                      <ul
+                        class="mt-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        <li class="flex items-center gap-space-xs">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-secondary"
+                            >check</span
+                          >
+                          <span
+                            >Lubricante base agua verificado compatible</span
+                          >
+                        </li>
+                        <li class="flex items-center gap-space-xs">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-secondary"
+                            >check</span
+                          >
+                          <span>Barreras de látex / nitrilo sin caducar</span>
+                        </li>
+                        <li class="flex items-center gap-space-xs">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-secondary"
+                            >check</span
+                          >
+                          <span
+                            >Hidratación adecuada y jabón syndet pH neutro</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <button
+                      class="text-left font-label-md text-label-md text-primary hover:text-on-primary-fixed-variant flex items-center gap-1 transition-colors"
+                      type="button"
+                    >
+                      <span>Revisar inventario personal</span>
+                      <span class="material-symbols-outlined text-[16px]"
+                        >arrow_forward</span
+                      >
+                    </button>
+                  </div>
+                  <!-- Card Toma Preventiva / PrEP -->
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between gap-space-md"
+                  >
+                    <div>
+                      <div
+                        class="flex items-center justify-between mb-space-xs"
+                      >
+                        <span
+                          class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary"
+                          >Continuidad preventiva</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full font-bold"
+                          >100% Adherencia</span
+                        >
+                      </div>
+                      <h3
+                        class="font-headline-sm text-headline-sm text-on-surface"
+                      >
+                        Toma de prevención
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                      >
+                        PrEP diaria / Suplemento íntimo con seguimiento
+                        estricto.
+                      </p>
+                      <!-- Mini Gráfico Adherencia Semanal -->
+                      <div
+                        class="mt-space-sm flex items-center justify-between bg-surface-container-lowest p-space-xs rounded-md"
+                      >
+                        <div class="flex flex-col items-center">
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >L</span
+                          >
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary mt-1"
+                          ></span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >M</span
+                          >
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary mt-1"
+                          ></span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >X</span
+                          >
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary mt-1"
+                          ></span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >J</span
+                          >
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary mt-1"
+                          ></span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >V</span
+                          >
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary mt-1"
+                          ></span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >S</span
+                          >
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary mt-1"
+                          ></span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >D</span
+                          >
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim mt-1"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-space-xs">
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                        >Toma de hoy: 09:30 AM</span
+                      >
+                      <span
+                        class="font-label-md text-label-md text-secondary font-semibold flex items-center gap-1"
+                      >
+                        <span class="material-symbols-outlined text-[16px]"
+                          >check_circle</span
+                        >
+                        Registrada
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Recursos y Guías Rápidas con Imagen de Ambiente -->
+              <section
+                class="rounded-xl bg-surface-container-low p-space-md flex flex-col sm:flex-row items-center gap-space-md"
+              >
+                <img
+                  class="w-full sm:w-32 h-28 rounded-lg object-cover shrink-0"
+                  data-alt="Soft aesthetic photograph of hands holding delicate lavender and pastel botanical tea cups, warm daylight, queer wellness and mindful self care vibe, gentle lavender and sage tones, high quality soft focus"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkClCxhojySnUswrfdSHEYUYJLe2-zBiIsAAwKMftBk6iRiTG9G9JLBnHBOfOslZkllrNtDLxQjW1fhC2F-C2In0Tf0kI8INVG4XSVBy4OUJJqskmkqOaND7FRInQ3gcQgwYrXnDN7rRCN6OKwVF9qshwKYoQV83h8mblblZiM3enSB9oWnLmJ6IBuLqAke_LbmcEsV32BFGdiLo3Krb-vN5mzG3hoGdU72NNspTFbgoj-n0KEMJuYuQ"
+                />
+                <div class="flex-1">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold"
+                    >Lectura recomendada</span
+                  >
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface">
+                    Guía de comunicación asertiva sobre consentimiento y
+                    barreras
+                  </h4>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2"
+                  >
+                    Aprende a dialogar de forma cómoda y empática con nuevas
+                    parejas afectivas.
+                  </p>
+                </div>
+                <button
+                  class="w-full sm:w-auto shrink-0 px-space-md py-space-sm rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all"
+                  type="button"
+                >
+                  Leer artículo
+                </button>
+              </section>
+            </div>
+            <!-- COLUMNA DERECHA: Calendario Próximos Hitos & Asistente Abierto (5 Cols) -->
+            <div class="lg:col-span-5 flex flex-col gap-space-lg">
+              <!-- Card: Próximos Hitos & Calendario de Salud -->
+              <section
+                class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant"
+                    >
+                      <span class="material-symbols-outlined text-[22px]"
+                        >calendar_month</span
+                      >
+                    </div>
+                    <div>
+                      <h2
+                        class="font-headline-sm text-headline-sm text-on-surface"
+                      >
+                        Próximos Hitos &amp; Controles
+                      </h2>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        Prevención periódica programada
+                      </p>
+                    </div>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-outline cursor-pointer hover:text-primary"
+                    >tune</span
+                  >
+                </div>
+                <!-- Lista de Eventos -->
+                <div class="flex flex-col gap-space-sm mt-space-xs">
+                  <!-- Hito 1: 18 Sept -->
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-start gap-space-md"
+                  >
+                    <div
+                      class="flex flex-col items-center justify-center bg-surface-container-lowest w-14 h-14 rounded-lg shrink-0 shadow-sm"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm uppercase font-bold text-tertiary"
+                        >SEP</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-on-surface font-bold leading-none"
+                        >18</span
+                      >
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div
+                        class="flex flex-wrap items-center gap-space-xs mb-1"
+                      >
+                        <span
+                          class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full font-semibold"
+                          >Programado</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface-variant"
+                          >17:00 h</span
+                        >
+                      </div>
+                      <h3
+                        class="font-label-lg text-label-lg text-on-surface font-semibold truncate"
+                      >
+                        Prueba de ITS periódica
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant truncate"
+                      >
+                        Centro Comunitario Amigable • Gratuita &amp;
+                        Confidencial
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Hito 2: 22 Sept -->
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-start gap-space-md"
+                  >
+                    <div
+                      class="flex flex-col items-center justify-center bg-surface-container-lowest w-14 h-14 rounded-lg shrink-0 shadow-sm"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm uppercase font-bold text-primary"
+                        >SEP</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-on-surface font-bold leading-none"
+                        >22</span
+                      >
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div
+                        class="flex flex-wrap items-center gap-space-xs mb-1"
+                      >
+                        <span
+                          class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-space-xs py-0.5 rounded-full font-semibold"
+                          >Autocuidado</span
+                        >
+                      </div>
+                      <h3
+                        class="font-label-lg text-label-lg text-on-surface font-semibold truncate"
+                      >
+                        Reposición de insumos
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2"
+                      >
+                        Preservativos de látex/nitrilo y lubricante a base de
+                        agua.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Hito 3: 30 Sept -->
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-start gap-space-md"
+                  >
+                    <div
+                      class="flex flex-col items-center justify-center bg-surface-container-lowest w-14 h-14 rounded-lg shrink-0 shadow-sm"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant"
+                        >SEP</span
+                      >
+                      <span
+                        class="font-headline-md text-headline-md text-on-surface font-bold leading-none"
+                        >30</span
+                      >
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div
+                        class="flex flex-wrap items-center gap-space-xs mb-1"
+                      >
+                        <span
+                          class="font-label-sm text-label-sm bg-surface-container-highest text-on-surface px-space-xs py-0.5 rounded-full font-semibold"
+                          >Consulta médica</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface-variant"
+                          >11:30 h</span
+                        >
+                      </div>
+                      <h3
+                        class="font-label-lg text-label-lg text-on-surface font-semibold truncate"
+                      >
+                        Control rutinario gineco-urológico
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant truncate"
+                      >
+                        Dra. Carmen Valdés (Espacio Seguro)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="w-full mt-space-xs py-space-sm px-space-md rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-primary-fixed hover:text-on-primary-fixed-variant transition-all flex items-center justify-center gap-space-xs"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >event_note</span
+                  >
+                  <span>Ver agenda completa y recordatorios discretos</span>
+                </button>
+              </section>
+              <!-- Widget Asistente de Bienestar Sexual (Integrado y Activo en la pantalla) -->
+              <section
+                class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >smart_toy</span
+                      >
+                    </div>
+                    <div>
+                      <div class="flex items-center gap-1.5">
+                        <h2
+                          class="font-headline-sm text-headline-sm text-on-surface"
+                        >
+                          Asistente Clínico &amp; Bienestar
+                        </h2>
+                        <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      </div>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        Respuestas instantáneas basadas en guías de salud
+                      </p>
+                    </div>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-space-xs py-0.5 rounded-full"
+                    >En línea</span
+                  >
+                </div>
+                <!-- Banner de advertencia médica visible -->
+                <div
+                  class="rounded-lg bg-surface-container-high/80 p-space-sm flex items-start gap-space-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5"
+                    >warning</span
+                  >
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface leading-tight"
+                  >
+                    <strong class="font-semibold text-tertiary"
+                      >Aviso clínico:</strong
+                    >
+                    Esta información es estrictamente educativa y de orientación
+                    preliminar; no reemplaza una valoración profesional o médica
+                    diagnóstica.
+                  </p>
+                </div>
+                <!-- Burbuja de Mensaje del Bot -->
+                <div
+                  class="bg-surface-container-low p-space-md rounded-lg rounded-tl-xs flex flex-col gap-space-xs"
+                >
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-semibold"
+                    >Tu Espacio Bot</span
+                  >
+                  <p class="font-body-md text-body-md text-on-surface">
+                    Hola, ¿tienes alguna duda sobre tu salud íntima o
+                    prevención hoy? Puedo explicarte términos médicos o guiarte
+                    antes de una consulta presencial.
+                  </p>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant self-end"
+                    >Recién ahora</span
+                  >
+                </div>
+                <!-- Preguntas rápidas en burbujas -->
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold"
+                    >Preguntas frecuentes sugeridas</span
+                  >
+                  <div class="flex flex-col gap-space-xs" id="bot-prompt-list">
+                    <button
+                      class="bot-prompt text-left p-space-sm rounded-lg bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed-variant transition-all font-body-sm text-body-sm text-on-surface flex items-center justify-between"
+                      type="button"
+                    >
+                      <span
+                        >¿Qué lubricante es compatible con preservativos?</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[18px] opacity-70"
+                        >north_east</span
+                      >
+                    </button>
+                    <button
+                      class="bot-prompt text-left p-space-sm rounded-lg bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed-variant transition-all font-body-sm text-body-sm text-on-surface flex items-center justify-between"
+                      type="button"
+                    >
+                      <span>¿Cuándo debería hacerme una prueba de ITS?</span>
+                      <span
+                        class="material-symbols-outlined text-[18px] opacity-70"
+                        >north_east</span
+                      >
+                    </button>
+                    <button
+                      class="bot-prompt text-left p-space-sm rounded-lg bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed-variant transition-all font-body-sm text-body-sm text-on-surface flex items-center justify-between"
+                      type="button"
+                    >
+                      <span>¿Qué diferencia hay entre VIH y sida?</span>
+                      <span
+                        class="material-symbols-outlined text-[18px] opacity-70"
+                        >north_east</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- Input de Chat -->
+                <div class="relative mt-space-xs">
+                  <input
+                    class="w-full pl-space-md pr-12 py-space-sm rounded-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary"
+                    placeholder="Escribe tu consulta confidencial aquí..."
+                    type="text"
+                  />
+                  <button
+                    aria-label="Enviar pregunta"
+                    class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-all"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >send</span
+                    >
+                  </button>
+                </div>
+              </section>
+              <!-- Tarjeta de Comunidad de Apoyo y Privacidad -->
+              <div
+                class="rounded-xl bg-surface-container-low p-space-md flex items-center justify-between"
+              >
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="material-symbols-outlined text-secondary text-[28px]"
+                    >diversity_3</span
+                  >
+                  <div>
+                    <span
+                      class="font-label-lg text-label-lg text-on-surface font-semibold block"
+                      >Círculo de Pares &amp; Apoyo</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Foro anónimo supervisado por profesionales</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all"
+                  type="button"
+                >
+                  Explorar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+    <aside
+      class="fixed bottom-6 right-6 z-50 max-w-sm flex flex-col items-end gap-space-sm"
+    >
+      <div
+        class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_12px_32px_-4px_rgba(139,92,246,0.12)] border border-surface-container-high/60 hidden group-hover:block transition-all max-w-xs"
+      >
+        <div class="flex items-center gap-space-xs mb-space-xs">
+          <span class="material-symbols-outlined text-primary text-[20px]"
+            >psychology</span
+          ><span
+            class="font-label-md text-label-md text-on-surface font-semibold"
+            >Asistente de Bienestar</span
+          ><span
+            class="ml-auto font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-space-xs py-0.5 rounded-full"
+            >Educativo &amp; confidencial</span
+          >
+        </div>
+        <p
+          class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm"
+        >
+          ¿Tienes dudas sobre prevención, autocuidado o tratamientos? Te
+          orientamos con rigor y calidez.
+        </p>
+        <div
+          class="bg-surface-container-low rounded p-space-xs flex items-start gap-space-xs"
+        >
+          <span
+            class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5"
+            >info</span
+          ><span
+            class="font-label-sm text-label-sm text-on-surface-variant leading-tight"
+            >Esta información es educativa y no reemplaza una valoración médica
+            profesional.</span
+          >
+        </div>
+      </div>
+      <button
+        class="flex items-center gap-space-sm bg-primary text-on-primary pl-space-md pr-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(139,92,246,0.35)] hover:bg-primary-container hover:text-on-primary-container transition-all"
+        type="button"
+      >
+        <span class="material-symbols-outlined text-[22px]"
+          >volunteer_activism</span
+        >
+        <div class="flex flex-col text-left">
+          <span class="font-label-md text-label-md font-semibold leading-tight"
+            >Asistente de Bienestar</span
+          ><span class="font-label-sm text-label-sm opacity-90 leading-tight"
+            >Educativo &amp; confidencial</span
+          >
+        </div>
+      </button>
+    </aside>
+    <footer class="w-full bg-surface-container-low mt-auto py-space-xl">
+      <div
+        class="max-w-[1200px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"
+      >
+        <div class="flex flex-col gap-space-xs">
+          <span class="font-headline-sm text-headline-sm text-primary"
+            >Tu Espacio</span
+          >
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+            Tu sexualidad. Tu salud. Tu espacio. Plataforma segura, inclusiva y
+            libre de juicios para el autocuidado integral.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-space-md">
+          <span
+            class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-space-md py-space-xs rounded-full"
+            >100% Confidencial y Cifrado</span
+          ><span class="font-label-sm text-label-sm text-on-surface-variant"
+            >© 2024 Tu Espacio. Todos los derechos reservados.</span
+          >
+        </div>
+      </div>
+    </footer>
+      <script src="js/app.js"></script>
+  </body>
+</html>

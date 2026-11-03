@@ -1,0 +1,2064 @@
+<!doctype html>
+<html
+  lang="es"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tu Espacio | Bienestar &amp; Salud Sexual</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="image.png/screen.png" />
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"
+  >
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-[1200px] mx-auto px-margin flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-md shrink-0">
+          <img
+            alt="Healthy Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvwQQUNxDcYySnm-ecVt-pGKMYyJc3cEW04dPg9sOYDbugo5yOAbPMrFH6KGsrVJnk3Z3Efs_LdhYFh9-xFpHHucfd2FtARaZwIWqb4CBdLvg5j6D3yBDMU2yNjL4jhv8xow3JrFxlB-4PE50HSkevlay9pzGYKyYpnmMj91qpVa93TzlgfkUUPi8S5DOzMmPIKrDiho-WNl6LCt-zVQQeTmS05j0DeezONnvg2aLd2t6WtuWu0Eso3yn3CU20J0B0B-g"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none"
+              >Healthy</span
+            ><span
+              class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs leading-none"
+              >Bienestar &amp; Salud Sexual</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full"
+          data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-full"
+        >
+          <a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            href="index.html"
+            >Inicio</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="mi-bienestar"
+            href="bienestar.html"
+            >Mi Bienestar</a
+          ><a
+            aria-current="page"
+            class="px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-label-lg rounded-full"
+            data-path="agenda-y-controles"
+            href="agenda_pruebas_tratamientos.html"
+            >Agenda &amp; Controles</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="biblioteca"
+            href="biblioteca.html"
+            >Biblioteca</a
+          ><a
+            class="font-label-lg text-label-lg px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="comunidad-segura"
+            href="comunidad_chats.html"
+            >Comunidad Segura</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm shrink-0">
+          <button
+            class="flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all text-left"
+            title="Cerrar o camuflar al instante"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[18px]">security</span
+            ><span class="font-label-md text-label-md hidden sm:inline"
+              >Modo discreto</span
+            ></button
+          ><button
+            aria-label="Notificaciones"
+            class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all relative"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]"
+              >notifications</span
+            ><span
+              class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"
+            ></span>
+          </button>
+          <div class="flex items-center gap-space-sm pl-space-xs group relative">
+            <div class="flex flex-col items-end hidden md:flex">
+              <span
+                class="font-label-md text-label-md text-on-surface leading-tight"
+                data-user-name
+                >Invitado</span
+              ><span
+                class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-space-xs py-0.5 rounded-full mt-0.5 leading-none"
+                ></span
+              >
+            </div>
+            <img
+              alt="Profile"
+              class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed"
+              data-user-avatar
+              src="friendly_and_welcoming_illustrated_modern_avatar_portrait_of_a_diverse_person/foto.png"
+            />
+            <button
+              aria-label="Cerrar sesión"
+              class="absolute right-0 top-full z-[60] mt-1 inline-flex items-center gap-space-xs rounded-lg bg-surface-container-lowest px-space-md py-space-sm text-on-surface shadow-lg ring-1 ring-surface-container-high"
+              data-logout
+              hidden
+              title="Cerrar sesión"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[18px]">logout</span>
+              <span class="font-label-md text-label-md">Cerrar sesión</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 flex-1 bg-surface">
+      <div class="max-w-[1200px] mx-auto px-margin py-space-xl">
+        <div class="flex flex-col w-full gap-space-xl">
+          <!-- Top Banner / Editorial Introduction & Privacy Statement -->
+          <section
+            class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-high p-space-lg md:p-space-xl shadow-sm"
+          >
+            <div
+              class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-lg"
+            >
+              <div class="max-w-2xl">
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest text-primary mb-space-sm shadow-sm"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >verified_user</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm font-semibold tracking-wide uppercase"
+                    >Espacio Seguro &amp; Cifrado</span
+                  >
+                </div>
+                <h1
+                  class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-xs"
+                >
+                  Agenda de Salud &amp; Prevención
+                </h1>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                >
+                  Controla tus tiempos con tranquilidad, empatía y total
+                  privacidad. Gestiona tus chequeos rutinarios, tratamientos y
+                  recordatorios en un entorno libre de prejuicios y diseñado
+                  para tu bienestar integral.
+                </p>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row md:flex-col items-start md:items-end gap-space-sm shrink-0"
+              >
+                <div
+                  class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px] material-symbols-filled"
+                    >lock</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface font-medium"
+                    >Privacidad de Nivel Clínico</span
+                  >
+                </div>
+                <button
+                  class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md"
+                  id="open-reminder-modal-top"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >add_alarm</span
+                  >
+                  <span class="font-label-md text-label-md"
+                    >Programar Recordatorio</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Soft Decorative Light Blobs (No screen-edge pin) -->
+            <div
+              class="absolute -top-12 -right-12 w-64 h-64 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div
+              class="absolute -bottom-16 left-1/3 w-80 h-80 bg-secondary-container/30 rounded-full blur-3xl pointer-events-none"
+            ></div>
+          </section>
+          <!-- Key Metrics / Summary Cards -->
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+            <!-- Card 1: Última prueba -->
+            <div
+              class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md relative overflow-hidden group"
+            >
+              <div
+                class="flex items-start justify-between gap-space-sm mb-space-md"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >biotech</span
+                  >
+                </div>
+                <span
+                  class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-medium"
+                >
+                  No reactivo
+                </span>
+              </div>
+              <div>
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider mb-1"
+                  >Última prueba realizada</span
+                >
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1"
+                >
+                  Hace 3 meses
+                </h2>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[16px]"
+                    >check_circle</span
+                  >
+                  Todo en orden • Registrado junio 2024
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center justify-between"
+              >
+                <span class="font-label-sm text-label-sm text-outline"
+                  >Próxima recomendada: 18 Sept</span
+                >
+                <button
+                  class="font-label-sm text-label-sm text-primary hover:underline flex items-center"
+                  type="button"
+                >
+                  Ver historial
+                  <span class="material-symbols-outlined text-[14px] ml-0.5"
+                    >chevron_right</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Card 2: Próxima cita -->
+            <div
+              class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md relative overflow-hidden group"
+            >
+              <div
+                class="flex items-start justify-between gap-space-sm mb-space-md"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >calendar_month</span
+                  >
+                </div>
+                <span
+                  class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-medium"
+                >
+                  Confirmada
+                </span>
+              </div>
+              <div>
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider mb-1"
+                  >Próxima cita médica</span
+                >
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1"
+                >
+                  30 de Septiembre
+                </h2>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[16px]"
+                    >schedule</span
+                  >
+                  10:30 hrs • Dr. Méndez (Salud Integral)
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center justify-between"
+              >
+                <span class="font-label-sm text-label-sm text-outline"
+                  >Modalidad: Presencial</span
+                >
+                <button
+                  class="font-label-sm text-label-sm text-primary hover:underline flex items-center"
+                  type="button"
+                >
+                  Reagendar
+                  <span class="material-symbols-outlined text-[14px] ml-0.5"
+                    >tune</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Card 3: Adherencia PrEP -->
+            <div
+              class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md relative overflow-hidden group"
+            >
+              <div
+                class="flex items-start justify-between gap-space-sm mb-space-md"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >medication</span
+                  >
+                </div>
+                <span
+                  class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface font-medium"
+                >
+                  93% constancia
+                </span>
+              </div>
+              <div>
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider mb-1"
+                  >Tratamiento activo</span
+                >
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1"
+                >
+                  Prevención PrEP Diaria
+                </h2>
+                <div class="mt-space-xs mb-space-xs">
+                  <div
+                    class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1"
+                  >
+                    <span class="">Adherencia mensual</span>
+                    <span class="font-semibold text-secondary"
+                      >28 / 30 días</span
+                    >
+                  </div>
+                  <div
+                    class="w-full h-2 rounded-full bg-surface-container overflow-hidden"
+                  >
+                    <div
+                      class="h-full bg-secondary rounded-full transition-all duration-500 monthly-adherence-progress"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center justify-between"
+              >
+                <span class="font-label-sm text-label-sm text-outline"
+                  >Stock restante: 14 comprimidos</span
+                >
+                <button
+                  class="font-label-sm text-label-sm text-secondary hover:underline flex items-center"
+                  type="button"
+                >
+                  Renovar receta
+                  <span class="material-symbols-outlined text-[14px] ml-0.5"
+                    >sync</span
+                  >
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- Interactive Monthly Calendar & Side Action Panel -->
+          <section
+            class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start"
+          >
+            <!-- Main Calendar Area (8 cols) -->
+            <div
+              class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm"
+            >
+              <!-- Calendar Header -->
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-lg"
+              >
+                <div>
+                  <div class="flex items-center gap-space-sm">
+                    <h2
+                      class="font-headline-md text-headline-md text-on-surface tracking-tight"
+                      id="calendar-month-title"
+                    >
+                      Septiembre 2024
+                    </h2>
+                    <span
+                      class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-low text-primary font-medium"
+                      >Ciclo Actual</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                  >
+                    Haz clic en los días marcados para ver detalles y
+                    recomendaciones sin estigmas.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-full shrink-0"
+                >
+                  <button
+                    aria-label="Mes anterior"
+                    class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >chevron_left</span
+                    >
+                  </button>
+                  <span
+                    class="font-label-md text-label-md px-space-sm text-on-surface font-semibold"
+                    >Sep - Oct</span
+                  >
+                  <button
+                    aria-label="Mes siguiente"
+                    class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >chevron_right</span
+                    >
+                  </button>
+                </div>
+              </div>
+              <!-- Calendar Legend -->
+              <div
+                class="flex flex-wrap items-center gap-space-md p-space-sm mb-space-md bg-surface-container-low rounded-lg"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="w-3 h-3 rounded-full bg-primary-fixed-dim"
+                  ></span>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >Pruebas ITS rutinarias</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="w-3 h-3 rounded-full bg-secondary-fixed-dim"
+                  ></span>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >Prevención &amp; Insumos</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-surface-dim"></span>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >Consultas médicas</span
+                  >
+                </div>
+              </div>
+              <!-- Week Days Header -->
+              <div
+                class="grid grid-cols-7 gap-2 text-center font-label-md text-label-md text-on-surface-variant mb-2"
+              >
+                <span class="py-1">Lun</span>
+                <span class="py-1">Mar</span>
+                <span class="py-1">Mié</span>
+                <span class="py-1">Jue</span>
+                <span class="py-1">Vie</span>
+                <span class="py-1 text-tertiary font-bold">Sáb</span>
+                <span class="py-1 text-tertiary font-bold">Dom</span>
+              </div>
+              <!-- Calendar Grid Cells -->
+              <div class="grid grid-cols-7 gap-2">
+                <!-- Prior month trailing days (Aug 26 - Sep 01) -->
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">26</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">27</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">28</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">29</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">30</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">31</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface-variant flex flex-col justify-between"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >1</span
+                  >
+                </div>
+                <!-- Week 1: Sep 2 - 8 -->
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >2</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >3</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >4</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >5</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >6</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >7</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >8</span
+                  >
+                </div>
+                <!-- Week 2: Sep 9 - 15 -->
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >9</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >10</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >11</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >12</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >13</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >14</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >15</span
+                  >
+                </div>
+                <!-- Week 3: Sep 16 - 22 (includes 18 and 22 markers) -->
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >16</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >17</span
+                  >
+                </div>
+                <!-- Sep 18: Prueba ITS marcador morado suave -->
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-primary-fixed/40 text-on-surface flex flex-col justify-between hover:bg-primary-fixed transition-all cursor-pointer shadow-sm relative group"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm font-bold text-primary"
+                      >18</span
+                    >
+                    <span
+                      class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                    ></span>
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest/90 backdrop-blur-sm p-1 rounded"
+                  >
+                    <span
+                      class="font-label-sm text-[10px] sm:text-label-sm text-on-primary-fixed-variant leading-tight block truncate font-medium"
+                      >Prueba ITS rutinaria</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >19</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >20</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >21</span
+                  >
+                </div>
+                <!-- Sep 22: Prevención & Insumos marcador verde menta -->
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-secondary-container/40 text-on-surface flex flex-col justify-between hover:bg-secondary-container/70 transition-all cursor-pointer shadow-sm relative group"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm font-bold text-secondary"
+                      >22</span
+                    >
+                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest/90 backdrop-blur-sm p-1 rounded"
+                  >
+                    <span
+                      class="font-label-sm text-[10px] sm:text-label-sm text-on-secondary-container leading-tight block truncate font-medium"
+                      >Stock de insumos</span
+                    >
+                  </div>
+                </div>
+                <!-- Week 4: Sep 23 - 29 -->
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >23</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >24</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >25</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >26</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >27</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >28</span
+                  >
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-low text-on-surface flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <span class="font-label-sm text-label-sm font-semibold"
+                    >29</span
+                  >
+                </div>
+                <!-- Week 5: Sep 30 + Oct -->
+                <!-- Sep 30: Marcador azul cielo Dr. Control -->
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface-container-highest text-on-surface flex flex-col justify-between hover:bg-surface-dim transition-all cursor-pointer shadow-sm relative group"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm font-bold text-on-surface"
+                      >30</span
+                    >
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest/90 backdrop-blur-sm p-1 rounded"
+                  >
+                    <span
+                      class="font-label-sm text-[10px] sm:text-label-sm text-on-surface leading-tight block truncate font-medium"
+                      >10:30 Cita Dr.</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">1 Oct</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">2 Oct</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">3 Oct</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">4 Oct</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">5 Oct</span>
+                </div>
+                <div
+                  class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
+                >
+                  <span class="font-label-sm text-label-sm">6 Oct</span>
+                </div>
+              </div>
+            </div>
+            <!-- Side Details Panel: Events of the Selected Month (4 cols) -->
+            <div class="lg:col-span-4 flex flex-col gap-space-md">
+              <!-- Card: Hitos de Septiembre -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm"
+              >
+                <div class="flex items-center justify-between mb-space-md">
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface font-semibold"
+                  >
+                    Próximos Eventos
+                  </h3>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >3 programados</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                  <!-- Event 1 -->
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low transition-all hover:bg-surface-container"
+                  >
+                    <div
+                      class="flex items-center justify-between gap-space-xs mb-1"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-medium"
+                      >
+                        18 Septiembre
+                      </span>
+                      <span
+                        class="material-symbols-outlined text-[16px] text-primary"
+                        >local_hospital</span
+                      >
+                    </div>
+                    <h4
+                      class="font-label-lg text-label-lg text-on-surface font-semibold"
+                    >
+                      Prueba de ITS Rutinaria
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                    >
+                      Control preventivo trimestral (PrEP monitoring).
+                    </p>
+                    <div
+                      class="mt-space-xs pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline"
+                    >
+                      <span class="">Recordatorio: Activo (Discreto)</span>
+                      <span class="text-primary font-medium"
+                        >Laboratorio Central</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Event 2 -->
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low transition-all hover:bg-surface-container"
+                  >
+                    <div
+                      class="flex items-center justify-between gap-space-xs mb-1"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-medium"
+                      >
+                        22 Septiembre
+                      </span>
+                      <span
+                        class="material-symbols-outlined text-[16px] text-secondary"
+                        >inventory_2</span
+                      >
+                    </div>
+                    <h4
+                      class="font-label-lg text-label-lg text-on-surface font-semibold"
+                    >
+                      Prevención &amp; Insumos
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                    >
+                      Renovación de kits de barrera y lubricantes a base de
+                      agua.
+                    </p>
+                    <div
+                      class="mt-space-xs pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline"
+                    >
+                      <span class="">Entrega confidencial</span>
+                      <span class="text-secondary font-medium"
+                        >Punto de retiro</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Event 3 -->
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low transition-all hover:bg-surface-container"
+                  >
+                    <div
+                      class="flex items-center justify-between gap-space-xs mb-1"
+                    >
+                      <span
+                        class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface font-medium"
+                      >
+                        30 Septiembre • 10:30 hrs
+                      </span>
+                      <span
+                        class="material-symbols-outlined text-[16px] text-primary"
+                        >stethoscope</span
+                      >
+                    </div>
+                    <h4
+                      class="font-label-lg text-label-lg text-on-surface font-semibold"
+                    >
+                      Cita Dr. Control Sexual &amp; General
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                    >
+                      Revisión de analíticas y acompañamiento integral.
+                    </p>
+                    <div
+                      class="mt-space-xs pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline"
+                    >
+                      <span class="">Dr. David Méndez</span>
+                      <span class="text-primary font-medium"
+                        >Consultorio 402</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Quick Action: Programar recordatorio discreto -->
+              <div
+                class="p-space-lg rounded-xl bg-gradient-to-br from-primary-fixed/40 via-surface-container-low to-surface-container-lowest shadow-sm flex flex-col gap-space-sm"
+              >
+                <div class="flex items-start gap-space-sm">
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >notifications_active</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="font-label-lg text-label-lg text-on-surface font-semibold"
+                    >
+                      Recordatorios Invisibles
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                    >
+                      Notificaciones por SMS o Push configuradas como "Nota de
+                      rutina" o "Pausa saludable", sin términos médicos
+                      explícitos.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="w-full mt-space-xs py-space-sm px-space-md rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-all text-center font-label-md text-label-md font-semibold shadow-md flex items-center justify-center gap-space-xs"
+                  id="open-reminder-modal-btn"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >security</span
+                  >
+                  Programar Recordatorio Discreto
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- Section 3: Panel de Pruebas y Chequeos Clínicos -->
+          <section class="flex flex-col gap-space-lg">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm"
+            >
+              <div>
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-0.5 rounded-full bg-surface-container text-on-surface-variant mb-space-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-secondary"
+                    >health_and_safety</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm font-semibold tracking-wide uppercase"
+                    >Historial &amp; Cribado</span
+                  >
+                </div>
+                <h2
+                  class="font-headline-lg text-headline-lg text-on-surface font-bold"
+                >
+                  Pruebas &amp; Chequeos Periódicos
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Consulta tu bitácora de cribado serológico, citologías y
+                  próximos pasos diagnósticos.
+                </p>
+              </div>
+              <button
+                class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all font-label-md text-label-md shrink-0"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >download</span
+                >
+                Exportar Reporte Cifrado (PDF)
+              </button>
+            </div>
+            <!-- Tests List and LGBT+ Friendly Center Locator -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start"
+            >
+              <!-- Tests Table / Cards (7 cols) -->
+              <div class="lg:col-span-7 flex flex-col gap-space-md">
+                <!-- Test 1: VIH 4ª Generación -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md"
+                >
+                  <div class="flex items-start justify-between gap-space-sm">
+                    <div class="flex items-start gap-space-sm">
+                      <div
+                        class="w-10 h-10 rounded-lg bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >shield_with_heart</span
+                        >
+                      </div>
+                      <div>
+                        <h3
+                          class="font-label-lg text-label-lg text-on-surface font-semibold"
+                        >
+                          VIH (Antígeno p24 + Anticuerpos 4ª Gen)
+                        </h3>
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface-variant"
+                          >Método: Quimioluminiscencia (Vía venosa)</span
+                        >
+                      </div>
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-medium shrink-0"
+                    >
+                      No reactivo
+                    </span>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant"
+                  >
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Última prueba:</span
+                      >
+                      <span class="font-medium text-on-surface"
+                        >14 de Junio, 2024</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Ventana clínica:</span
+                      >
+                      <span class="font-medium text-on-surface"
+                        >Periodo superado</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Próxima cita sugerida:</span
+                      >
+                      <span class="font-medium text-primary"
+                        >18 de Septiembre, 2024</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span class="flex items-center gap-1 text-outline">
+                      <span
+                        class="material-symbols-outlined text-[16px] text-secondary"
+                        >lock</span
+                      >
+                      Resultado archivado privado con clave biométrica
+                    </span>
+                    <button
+                      class="text-primary hover:underline font-semibold flex items-center gap-0.5"
+                      type="button"
+                    >
+                      Ver detalles clínicos
+                      <span class="material-symbols-outlined text-[14px]"
+                        >open_in_new</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- Test 2: Panel Completo ITS -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md"
+                >
+                  <div class="flex items-start justify-between gap-space-sm">
+                    <div class="flex items-start gap-space-sm">
+                      <div
+                        class="w-10 h-10 rounded-lg bg-primary-fixed/60 text-primary flex items-center justify-center shrink-0"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >science</span
+                        >
+                      </div>
+                      <div>
+                        <h3
+                          class="font-label-lg text-label-lg text-on-surface font-semibold"
+                        >
+                          Panel ITS Integral (Sífilis, Clamidia, Gonorrea, VHB)
+                        </h3>
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface-variant"
+                          >PCR múltiplex (Faringe, anal, orina) +
+                          Serología</span
+                        >
+                      </div>
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-medium shrink-0"
+                    >
+                      Próxima: 18 Sept
+                    </span>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant"
+                  >
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Frecuencia recomendada:</span
+                      >
+                      <span class="font-medium text-on-surface"
+                        >Cada 3 meses (PrEP)</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Última muestra:</span
+                      >
+                      <span class="font-medium text-on-surface"
+                        >Negativo (Junio 2024)</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Estado de orden:</span
+                      >
+                      <span class="font-medium text-secondary"
+                        >Volante emitido</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span class="flex items-center gap-1 text-outline">
+                      <span
+                        class="material-symbols-outlined text-[16px] text-primary"
+                        >info</span
+                      >
+                      Recomendación de no orinar 1 hora previa al test
+                    </span>
+                    <button
+                      class="text-primary hover:underline font-semibold flex items-center gap-0.5"
+                      type="button"
+                    >
+                      Descargar volante médico
+                      <span class="material-symbols-outlined text-[14px]"
+                        >file_download</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- Test 3: VPH / Citología -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md"
+                >
+                  <div class="flex items-start justify-between gap-space-sm">
+                    <div class="flex items-start gap-space-sm">
+                      <div
+                        class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >medical_information</span
+                        >
+                      </div>
+                      <div>
+                        <h3
+                          class="font-label-lg text-label-lg text-on-surface font-semibold"
+                        >
+                          VPH Genotipificación / Citología Anual
+                        </h3>
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface-variant"
+                          >Prevención y detección temprana de lesiones</span
+                        >
+                      </div>
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium shrink-0"
+                    >
+                      Anual programada
+                    </span>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant"
+                  >
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Último control:</span
+                      >
+                      <span class="font-medium text-on-surface"
+                        >Noviembre 2023</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Resultado:</span
+                      >
+                      <span class="font-medium text-on-surface"
+                        >Negativo / Normal</span
+                      >
+                    </div>
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm text-outline block"
+                        >Ventana de revisión:</span
+                      >
+                      <span class="font-medium text-on-surface"
+                        >Noviembre 2024</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span class="flex items-center gap-1 text-outline">
+                      <span
+                        class="material-symbols-outlined text-[16px] text-secondary"
+                        >vaccines</span
+                      >
+                      Vacunación Gardasil-9: Pauta completa (3/3)
+                    </span>
+                    <button
+                      class="text-primary hover:underline font-semibold flex items-center gap-0.5"
+                      type="button"
+                    >
+                      Historial de vacunas
+                      <span class="material-symbols-outlined text-[14px]"
+                        >chevron_right</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Map & LGBT+ Friendly Testing Centers (5 cols) -->
+              <div
+                class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md"
+              >
+                <div>
+                  <div
+                    class="flex items-center gap-space-xs text-secondary mb-1"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >diversity_3</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm font-semibold uppercase"
+                      >Acceso Comunitario</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                  >
+                    Centros Amigables LGBT+
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                  >
+                    Espacios seguros, gratuitos o de coste accesible, con
+                    profesionales formados en diversidad afectivo-sexual y de
+                    género.
+                  </p>
+                </div>
+                <!-- Interactive Map Element with data-location -->
+                <div
+                  class="w-full h-48 bg-cover bg-center rounded-lg shadow-inner relative overflow-hidden flex flex-col justify-end p-space-sm clinic-map-background"
+                  data-alt="Warm luminous map visualization showing friendly community health clinic locations with soft purple pins and clean modern cartography in Madrid."
+                  data-location="Madrid, Spain LGBT Sexual Health Center"
+                >
+                  <div
+                    class="bg-surface/90 backdrop-blur-md p-space-sm rounded flex items-center justify-between shadow-sm"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary text-[20px]"
+                        >pin_drop</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface font-semibold"
+                        >3 centros verificados cercanos</span
+                      >
+                    </div>
+                    <button
+                      class="font-label-sm text-label-sm text-primary font-bold hover:underline"
+                      type="button"
+                    >
+                      Explorar
+                    </button>
+                  </div>
+                </div>
+                <!-- List of Friendly Centers -->
+                <div class="flex flex-col gap-space-xs">
+                  <!-- Center 1 -->
+                  <div
+                    class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-sm hover:bg-surface-container transition-colors"
+                  >
+                    <div>
+                      <h4
+                        class="font-label-md text-label-md text-on-surface font-semibold"
+                      >
+                        Centro Comunitario Sandoval
+                      </h4>
+                      <p
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                      >
+                        Testeo rápido VIH/Sífilis en 20 min • 100% Anónimo
+                      </p>
+                      <div
+                        class="flex items-center gap-space-xs mt-1 font-label-sm text-label-sm text-secondary"
+                      >
+                        <span class="material-symbols-outlined text-[14px]"
+                          >check_circle</span
+                        >
+                        <span class="">Gratuito y sin cita previa</span>
+                      </div>
+                    </div>
+                    <a
+                      class="p-space-xs text-on-surface-variant hover:text-primary transition-colors"
+                      href="#"
+                      title="Ver dirección y horarios"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >directions</span
+                      >
+                    </a>
+                  </div>
+                  <!-- Center 2 -->
+                  <div
+                    class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-sm hover:bg-surface-container transition-colors"
+                  >
+                    <div>
+                      <h4
+                        class="font-label-md text-label-md text-on-surface font-semibold"
+                      >
+                        Espacio Apoyo Positivo
+                      </h4>
+                      <p
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                      >
+                        Pruebas rápidas, asesoría PrEP/PEP y apoyo entre pares
+                      </p>
+                      <div
+                        class="flex items-center gap-space-xs mt-1 font-label-sm text-label-sm text-primary"
+                      >
+                        <span class="material-symbols-outlined text-[14px]"
+                          >favorite</span
+                        >
+                        <span class="">Atención cálida e interseccional</span>
+                      </div>
+                    </div>
+                    <a
+                      class="p-space-xs text-on-surface-variant hover:text-primary transition-colors"
+                      href="#"
+                      title="Ver dirección y horarios"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >directions</span
+                      >
+                    </a>
+                  </div>
+                </div>
+                <div class="pt-space-xs">
+                  <button
+                    class="w-full py-space-sm rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-center font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >map</span
+                    >
+                    Ver Directorio Completo de Clínicas
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section 4: Tratamientos y Medicación Prescrita -->
+          <section class="flex flex-col gap-space-lg">
+            <div>
+              <div
+                class="inline-flex items-center gap-space-xs px-space-md py-0.5 rounded-full bg-surface-container text-on-surface-variant mb-space-xs"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px] text-tertiary"
+                  >pill</span
+                >
+                <span
+                  class="font-label-sm text-label-sm font-semibold tracking-wide uppercase"
+                  >Farmacoterapia &amp; Cuidado Diario</span
+                >
+              </div>
+              <h2
+                class="font-headline-lg text-headline-lg text-on-surface font-bold"
+              >
+                Tratamientos y Medicación Prescrita
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Toma el control de tu rutina terapéutica sin ansiedad, con
+                recordatorios discretos y pautas claras ante olvidos.
+              </p>
+            </div>
+            <!-- Active Prescription Detail Card -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start"
+            >
+              <!-- Medication Card (7 cols) -->
+              <div
+                class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm flex flex-col gap-space-md"
+              >
+                <!-- Card Top Bar -->
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b-0"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-14 h-14 rounded-xl bg-primary-fixed/50 text-primary flex items-center justify-center shadow-sm"
+                    >
+                      <span class="material-symbols-outlined text-[28px]"
+                        >medication_liquid</span
+                      >
+                    </div>
+                    <div>
+                      <div class="flex items-center gap-space-xs">
+                        <h3
+                          class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                        >
+                          Emtricitabina / Tenofovir
+                        </h3>
+                        <span
+                          class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold"
+                          >Activo</span
+                        >
+                      </div>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        200 mg / 245 mg • 1 comprimido cada 24 horas
+                      </p>
+                    </div>
+                  </div>
+                  <div class="text-left sm:text-right">
+                    <span class="font-label-sm text-label-sm text-outline block"
+                      >Horario habitual:</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-bold"
+                      >09:00 AM</span
+                    >
+                  </div>
+                </div>
+                <!-- Silent Notification & Discretion Switch -->
+                <div
+                  class="p-space-md rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-md"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[22px]"
+                      >volume_off</span
+                    >
+                    <div>
+                      <h4
+                        class="font-label-md text-label-md text-on-surface font-semibold"
+                      >
+                        Notificación Silenciosa &amp; Discreta
+                      </h4>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        Aviso sutil sin vibración fuerte ni logos identificables
+                        en pantalla de bloqueo.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Visual Toggle Switch -->
+                  <label
+                    class="relative inline-flex items-center cursor-pointer shrink-0"
+                  >
+                    <input checked="" class="sr-only peer" type="checkbox" />
+                    <div
+                      class="w-12 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"
+                    ></div>
+                  </label>
+                </div>
+                <!-- Today's Intake Status Tracker -->
+                <div
+                  class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-md text-label-md text-on-surface font-semibold"
+                      >Registro de Hoy (18 Septiembre)</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-medium"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >done_all</span
+                      >
+                      Toma completada (09:04 AM)
+                    </span>
+                  </div>
+                  <div class="flex gap-2">
+                    <!-- 7-day visual pills dots -->
+                    <div
+                      class="flex-1 text-center py-2 rounded bg-secondary-container text-on-secondary-container"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] block text-on-secondary-variant"
+                        >Jue</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >check</span
+                      >
+                    </div>
+                    <div
+                      class="flex-1 text-center py-2 rounded bg-secondary-container text-on-secondary-container"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] block text-on-secondary-variant"
+                        >Vie</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >check</span
+                      >
+                    </div>
+                    <div
+                      class="flex-1 text-center py-2 rounded bg-secondary-container text-on-secondary-container"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] block text-on-secondary-variant"
+                        >Sáb</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >check</span
+                      >
+                    </div>
+                    <div
+                      class="flex-1 text-center py-2 rounded bg-secondary-container text-on-secondary-container"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] block text-on-secondary-variant"
+                        >Dom</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >check</span
+                      >
+                    </div>
+                    <div
+                      class="flex-1 text-center py-2 rounded bg-error-container text-on-error-container"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] block text-on-error-container"
+                        >Lun</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >close</span
+                      >
+                    </div>
+                    <div
+                      class="flex-1 text-center py-2 rounded bg-secondary-container text-on-secondary-container"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] block text-on-secondary-variant"
+                        >Mar</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >check</span
+                      >
+                    </div>
+                    <div
+                      class="flex-1 text-center py-2 rounded bg-primary text-on-primary font-bold shadow-sm"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] block text-on-primary/80"
+                        >Hoy</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >check</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Protocol: Qué hacer si olvidas una dosis (Guía empática sin culpa) -->
+                <div
+                  class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs text-primary font-semibold font-label-md text-label-md"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >lightbulb</span
+                    >
+                    ¿Qué hacer si olvidaste la dosis del lunes?
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    No te preocupes ni sientas culpa. Si han pasado menos de 12
+                    horas desde tu horario habitual, toma la pastilla tan pronto
+                    lo recuerdes. Si pasaron más de 12 horas, sáltala y continúa
+                    al día siguiente a las 09:00 AM.
+                    <strong>Nunca tomes doble dosis</strong> en el mismo día. La
+                    eficacia de la pauta diaria sigue siendo extraordinariamente
+                    alta.
+                  </p>
+                  <div class="pt-space-xs">
+                    <button
+                      class="font-label-sm text-label-sm text-primary hover:underline font-semibold inline-flex items-center gap-1"
+                      type="button"
+                    >
+                      Consultar guía clínica completa de olvidos
+                      <span class="material-symbols-outlined text-[14px]"
+                        >arrow_forward</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Prescriptions History & Direct Care Contact (5 cols) -->
+              <div class="lg:col-span-5 flex flex-col gap-space-md">
+                <!-- Historial de Recetas Electrónicas -->
+                <div
+                  class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md"
+                >
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-semibold"
+                    >
+                      Historial de Recetas
+                    </h3>
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-xs py-0.5 rounded-full"
+                      >3 activas</span
+                    >
+                  </div>
+                  <div class="flex flex-col gap-space-xs">
+                    <!-- Prescription 1 -->
+                    <div
+                      class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm"
+                    >
+                      <div class="flex items-center gap-space-xs">
+                        <span
+                          class="material-symbols-outlined text-primary text-[20px]"
+                          >description</span
+                        >
+                        <div>
+                          <h4
+                            class="font-label-md text-label-md text-on-surface font-semibold"
+                          >
+                            PrEP (Emtricitabina/TF)
+                          </h4>
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >Vigencia: hasta Noviembre 2024</span
+                          >
+                        </div>
+                      </div>
+                      <button
+                        class="p-space-xs text-primary hover:bg-primary-fixed rounded-full transition-colors"
+                        title="Descargar código QR de dispensación"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >qr_code_2</span
+                        >
+                      </button>
+                    </div>
+                    <!-- Prescription 2 -->
+                    <div
+                      class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm"
+                    >
+                      <div class="flex items-center gap-space-xs">
+                        <span
+                          class="material-symbols-outlined text-outline text-[20px]"
+                          >vaccines</span
+                        >
+                        <div>
+                          <h4
+                            class="font-label-md text-label-md text-on-surface font-semibold"
+                          >
+                            Vacuna VHA / VHB
+                          </h4>
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >Dosis de refuerzo completada</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="font-label-sm text-label-sm text-secondary font-medium"
+                        >Finalizada</span
+                      >
+                    </div>
+                    <!-- Prescription 3 -->
+                    <div
+                      class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm"
+                    >
+                      <div class="flex items-center gap-space-xs">
+                        <span
+                          class="material-symbols-outlined text-outline text-[20px]"
+                          >water_drop</span
+                        >
+                        <div>
+                          <h4
+                            class="font-label-md text-label-md text-on-surface font-semibold"
+                          >
+                            Suplemento Vitamina D3
+                          </h4>
+                          <span
+                            class="font-label-sm text-label-sm text-on-surface-variant"
+                            >1 gota semanal preventiva</span
+                          >
+                        </div>
+                      </div>
+                      <button
+                        class="p-space-xs text-primary hover:bg-primary-fixed rounded-full transition-colors"
+                        title="Descargar receta"
+                        type="button"
+                      >
+                        <span class="material-symbols-outlined text-[20px]"
+                          >download</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Direct Personalized Care & Support Contact Card -->
+                <div
+                  class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <img
+                      class="w-12 h-12 rounded-full object-cover"
+                      data-alt="Warm and friendly portrait of a queer-affirming healthcare counselor with compassionate eyes in a calm studio lighting."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB23jdXZ_x3lhYND0hAsEX98mTIxIcbYhHxnJl-bYRADGmIt8Vm2GXjhjW2DNhsplBAMNL-H3u1t42Sq36jw-ewF0lrhcbK5FWjweD8l9O8qX4Sn5Px3snRK_Y55eGUErANt0BgHjJYxh_qB9cBNtiiB59YeezAjDGydJ7R01KSjYDOd_L-WRTvCkhrhLwV5MDVvkHBQ5sU2xU8zU0v8RrWnJS2FTSl3B2fHmwdpEGs5a9pfnwy3hduWw"
+                    />
+                    <div>
+                      <h4
+                        class="font-label-lg text-label-lg text-on-surface font-semibold"
+                      >
+                        Equipo de Soporte &amp; Enfermería
+                      </h4>
+                      <p
+                        class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1"
+                      >
+                        <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                        Disponible en chat seguro
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                  >
+                    ¿Dudas con la toma, efectos secundarios digestivos o
+                    necesitas renovar receta antes de un viaje? Escríbenos de
+                    forma confidencial.
+                  </p>
+                  <div class="flex items-center gap-space-xs pt-space-xs">
+                    <button
+                      class="flex-1 py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-all font-label-md text-label-md font-semibold text-center flex items-center justify-center gap-space-xs shadow-sm"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >chat</span
+                      >
+                      Chat de Salud Confidencial
+                    </button>
+                    <button
+                      class="p-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors"
+                      title="Llamada de orientación rápida"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >call</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Modal Component: Programar Recordatorio Discreto (Vanilla JS Interactive) -->
+          <div
+            class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm transition-opacity opacity-0 pointer-events-none"
+            id="reminder-modal"
+          >
+            <div
+              class="bg-surface-container-lowest max-w-lg w-full rounded-xl p-space-lg md:p-space-xl shadow-xl flex flex-col gap-space-md transform scale-95 transition-transform duration-200"
+            >
+              <div class="flex items-start justify-between">
+                <div>
+                  <span
+                    class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-semibold uppercase"
+                    >Modo Camuflaje</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1"
+                  >
+                    Configurar Recordatorio Discreto
+                  </h3>
+                </div>
+                <button
+                  class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors"
+                  id="close-reminder-modal-btn"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >close</span
+                  >
+                </button>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Elige un alias neutral para el aviso. Tus notificaciones y SMS
+                no incluirán nombres de fármacos ni términos de salud sexual.
+              </p>
+              <form
+                class="flex flex-col gap-space-md"
+                id="reminder-form"
+                
+              >
+                <div class="flex flex-col gap-space-xs">
+                  <label
+                    class="font-label-md text-label-md text-on-surface font-medium"
+                    >Evento a recordar</label
+                  >
+                  <select
+                    class="w-full bg-surface-container-low text-on-surface rounded-lg px-space-md py-space-sm font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
+                  >
+                    <option>Próxima prueba de ITS (18 Septiembre)</option>
+                    <option>Cita médica Dr. Méndez (30 Septiembre)</option>
+                    <option>Toma diaria de medicación (09:00 AM)</option>
+                    <option>Reposición de insumos preventivos</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <label
+                    class="font-label-md text-label-md text-on-surface font-medium"
+                    >Texto camuflado visible en pantalla</label
+                  >
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+                    <label
+                      class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container"
+                    >
+                      <input
+                        checked=""
+                        class="text-primary focus:ring-0"
+                        name="camouflage-text"
+                        type="radio"
+                      />
+                      <span class="font-label-sm text-label-sm text-on-surface"
+                        >"Momento de pausa y agua"</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container"
+                    >
+                      <input
+                        class="text-primary focus:ring-0"
+                        name="camouflage-text"
+                        type="radio"
+                      />
+                      <span class="font-label-sm text-label-sm text-on-surface"
+                        >"Recordatorio de cita personal"</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container"
+                    >
+                      <input
+                        class="text-primary focus:ring-0"
+                        name="camouflage-text"
+                        type="radio"
+                      />
+                      <span class="font-label-sm text-label-sm text-on-surface"
+                        >"Chequeo de rutina pendiente"</span
+                      >
+                    </label>
+                    <label
+                      class="flex items-center gap-2 p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container"
+                    >
+                      <input
+                        class="text-primary focus:ring-0"
+                        name="camouflage-text"
+                        type="radio"
+                      />
+                      <span class="font-label-sm text-label-sm text-on-surface"
+                        >Solo icono sutil (Sin texto)</span
+                      >
+                    </label>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <label
+                    class="font-label-md text-label-md text-on-surface font-medium"
+                    >Canal de entrega</label
+                  >
+                  <div class="flex gap-space-sm">
+                    <label
+                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface cursor-pointer"
+                    >
+                      <input
+                        checked=""
+                        class="rounded text-primary"
+                        type="checkbox"
+                      />
+                      Notificación Push Web
+                    </label>
+                    <label
+                      class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface cursor-pointer"
+                    >
+                      <input
+                        checked=""
+                        class="rounded text-primary"
+                        type="checkbox"
+                      />
+                      SMS Seguro
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-end gap-space-sm pt-space-xs"
+                >
+                  <button
+                    class="px-space-md py-space-sm rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors"
+                    id="cancel-reminder-btn"
+                    type="button"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    class="px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md"
+                    type="submit"
+                  >
+                    Guardar Recordatorio Protegido
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+    <aside
+      class="fixed bottom-6 right-6 z-50 max-w-sm flex flex-col items-end gap-space-sm"
+    >
+      <div
+        class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_12px_32px_-4px_rgba(139,92,246,0.12)] border border-surface-container-high/60 hidden group-hover:block transition-all max-w-xs"
+      >
+        <div class="flex items-center gap-space-xs mb-space-xs">
+          <span class="material-symbols-outlined text-primary text-[20px]"
+            >psychology</span
+          ><span
+            class="font-label-md text-label-md text-on-surface font-semibold"
+            >Asistente de Bienestar</span
+          ><span
+            class="ml-auto font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-space-xs py-0.5 rounded-full"
+            >Educativo &amp; confidencial</span
+          >
+        </div>
+        <p
+          class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm"
+        >
+          ¿Tienes dudas sobre prevención, autocuidado o tratamientos? Te
+          orientamos con rigor y calidez.
+        </p>
+        <div
+          class="bg-surface-container-low rounded p-space-xs flex items-start gap-space-xs"
+        >
+          <span
+            class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5"
+            >info</span
+          ><span
+            class="font-label-sm text-label-sm text-on-surface-variant leading-tight"
+            >Esta información es educativa y no reemplaza una valoración médica
+            profesional.</span
+          >
+        </div>
+      </div>
+      <button
+        class="flex items-center gap-space-sm bg-primary text-on-primary pl-space-md pr-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(139,92,246,0.35)] hover:bg-primary-container hover:text-on-primary-container transition-all"
+        type="button"
+      >
+        <span class="material-symbols-outlined text-[22px]"
+          >volunteer_activism</span
+        >
+        <div class="flex flex-col text-left">
+          <span class="font-label-md text-label-md font-semibold leading-tight"
+            >Asistente de Bienestar</span
+          ><span class="font-label-sm text-label-sm opacity-90 leading-tight"
+            >Educativo &amp; confidencial</span
+          >
+        </div>
+      </button>
+    </aside>
+    <footer class="w-full bg-surface-container-low mt-auto py-space-xl">
+      <div
+        class="max-w-[1200px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"
+      >
+        <div class="flex flex-col gap-space-xs">
+          <span class="font-headline-sm text-headline-sm text-primary"
+            >Healthy</span
+          >
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+            Tu sexualidad. Tu salud. Tu espacio. Plataforma segura, inclusiva y
+            libre de juicios para el autocuidado integral.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-space-md">
+          <span
+            class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-space-md py-space-xs rounded-full"
+            >100% Confidencial y Cifrado</span
+          ><span class="font-label-sm text-label-sm text-on-surface-variant"
+            >© 2024 Healthy. Todos los derechos reservados.</span
+          >
+        </div>
+      </div>
+    </footer>
+      <script src="js/app.js"></script>
+  </body>
+</html>
