@@ -408,7 +408,7 @@
                       class="font-headline-md text-headline-md text-on-surface tracking-tight"
                       id="calendar-month-title"
                     >
-                      Septiembre 2024
+                      Calendario
                     </h2>
                     <span
                       class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-low text-primary font-medium"
@@ -417,9 +417,10 @@
                   </div>
                   <p
                     class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                    id="calendar-selected-date"
+                    aria-live="polite"
                   >
-                    Haz clic en los días marcados para ver detalles y
-                    recomendaciones sin estigmas.
+                    Calendario según la fecha local de este dispositivo.
                   </p>
                 </div>
                 <div
@@ -428,19 +429,24 @@
                   <button
                     aria-label="Mes anterior"
                     class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all"
+                    id="calendar-prev-month-btn"
                     type="button"
                   >
                     <span class="material-symbols-outlined text-[18px]"
                       >chevron_left</span
                     >
                   </button>
-                  <span
-                    class="font-label-md text-label-md px-space-sm text-on-surface font-semibold"
-                    >Sep - Oct</span
+                  <button
+                    class="font-label-md text-label-md px-space-sm text-on-surface font-semibold hover:text-primary"
+                    id="calendar-today-btn"
+                    type="button"
                   >
+                    Hoy
+                  </button>
                   <button
                     aria-label="Mes siguiente"
                     class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all"
+                    id="calendar-next-month-btn"
                     type="button"
                   >
                     <span class="material-symbols-outlined text-[18px]"
@@ -492,7 +498,7 @@
                 <span class="py-1 text-tertiary font-bold">Dom</span>
               </div>
               <!-- Calendar Grid Cells -->
-              <div class="grid grid-cols-7 gap-2">
+              <div class="grid grid-cols-7 gap-2" id="calendar-grid">
                 <!-- Prior month trailing days (Aug 26 - Sep 01) -->
                 <div
                   class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
@@ -826,119 +832,19 @@
                   </h3>
                   <span
                     class="font-label-sm text-label-sm text-on-surface-variant"
-                    >3 programados</span
+                    >Fecha local</span
                   >
                 </div>
-                <div class="flex flex-col gap-space-sm">
-                  <!-- Event 1 -->
-                  <div
-                    class="p-space-md rounded-lg bg-surface-container-low transition-all hover:bg-surface-container"
+                <div
+                  class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm"
+                  role="status"
+                >
+                  <span class="material-symbols-outlined text-primary text-[20px]"
+                    >event_available</span
                   >
-                    <div
-                      class="flex items-center justify-between gap-space-xs mb-1"
-                    >
-                      <span
-                        class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-medium"
-                      >
-                        18 Septiembre
-                      </span>
-                      <span
-                        class="material-symbols-outlined text-[16px] text-primary"
-                        >local_hospital</span
-                      >
-                    </div>
-                    <h4
-                      class="font-label-lg text-label-lg text-on-surface font-semibold"
-                    >
-                      Prueba de ITS Rutinaria
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
-                    >
-                      Control preventivo trimestral (PrEP monitoring).
-                    </p>
-                    <div
-                      class="mt-space-xs pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline"
-                    >
-                      <span class="">Recordatorio: Activo (Discreto)</span>
-                      <span class="text-primary font-medium"
-                        >Laboratorio Central</span
-                      >
-                    </div>
-                  </div>
-                  <!-- Event 2 -->
-                  <div
-                    class="p-space-md rounded-lg bg-surface-container-low transition-all hover:bg-surface-container"
-                  >
-                    <div
-                      class="flex items-center justify-between gap-space-xs mb-1"
-                    >
-                      <span
-                        class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-medium"
-                      >
-                        22 Septiembre
-                      </span>
-                      <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
-                        >inventory_2</span
-                      >
-                    </div>
-                    <h4
-                      class="font-label-lg text-label-lg text-on-surface font-semibold"
-                    >
-                      Prevención &amp; Insumos
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
-                    >
-                      Renovación de kits de barrera y lubricantes a base de
-                      agua.
-                    </p>
-                    <div
-                      class="mt-space-xs pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline"
-                    >
-                      <span class="">Entrega confidencial</span>
-                      <span class="text-secondary font-medium"
-                        >Punto de retiro</span
-                      >
-                    </div>
-                  </div>
-                  <!-- Event 3 -->
-                  <div
-                    class="p-space-md rounded-lg bg-surface-container-low transition-all hover:bg-surface-container"
-                  >
-                    <div
-                      class="flex items-center justify-between gap-space-xs mb-1"
-                    >
-                      <span
-                        class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface font-medium"
-                      >
-                        30 Septiembre • 10:30 hrs
-                      </span>
-                      <span
-                        class="material-symbols-outlined text-[16px] text-primary"
-                        >stethoscope</span
-                      >
-                    </div>
-                    <h4
-                      class="font-label-lg text-label-lg text-on-surface font-semibold"
-                    >
-                      Cita Dr. Control Sexual &amp; General
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
-                    >
-                      Revisión de analíticas y acompañamiento integral.
-                    </p>
-                    <div
-                      class="mt-space-xs pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline"
-                    >
-                      <span class="">Dr. David Méndez</span>
-                      <span class="text-primary font-medium"
-                        >Consultorio 402</span
-                      >
-                    </div>
-                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    No hay eventos guardados para mostrar en este dispositivo.
+                  </p>
                 </div>
               </div>
               <!-- Quick Action: Programar recordatorio discreto -->

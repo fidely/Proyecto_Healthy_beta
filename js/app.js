@@ -34,6 +34,130 @@ if (currentUserAvatar?.startsWith("data:image")) {
   });
 }
 
+const calendarGrid = document.getElementById("calendar-grid");
+const calendarMonthTitle = document.getElementById("calendar-month-title");
+if (calendarGrid && calendarMonthTitle) {
+  const previousMonthButton = document.getElementById(
+    "calendar-prev-month-btn",
+  );
+  const nextMonthButton = document.getElementById("calendar-next-month-btn");
+  const todayButton = document.getElementById("calendar-today-btn");
+  const selectedDateLabel = document.getElementById("calendar-selected-date");
+  const monthFormatter = new Intl.DateTimeFormat("es", { month: "long" });
+  const fullDateFormatter = new Intl.DateTimeFormat("es", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  let today = getLocalDate();
+  let selectedDate = new Date(today);
+  let visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+
+  function getLocalDate(date = new Date()) {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  }
+
+  function isSameDate(firstDate, secondDate) {
+    return firstDate.getTime() === secondDate.getTime();
+  }
+
+  function renderCalendar() {
+    const year = visibleMonth.getFullYear();
+    const month = visibleMonth.getMonth();
+    const monthName = monthFormatter.format(visibleMonth);
+    calendarMonthTitle.textContent = `${monthName[0].toLocaleUpperCase("es")}${monthName.slice(1)} ${year}`;
+    if (selectedDateLabel) {
+      selectedDateLabel.textContent = `Fecha seleccionada: ${fullDateFormatter.format(selectedDate)}`;
+    }
+
+    const firstWeekday = (new Date(year, month, 1).getDay() + 6) % 7;
+    const firstVisibleDate = new Date(year, month, 1 - firstWeekday);
+    calendarGrid.replaceChildren();
+
+    for (let dayOffset = 0; dayOffset < 42; dayOffset += 1) {
+      const date = new Date(
+        firstVisibleDate.getFullYear(),
+        firstVisibleDate.getMonth(),
+        firstVisibleDate.getDate() + dayOffset,
+      );
+      const isCurrentMonth = date.getMonth() === month;
+      const isToday = isSameDate(date, today);
+      const isSelected = isSameDate(date, selectedDate);
+      const dayButton = document.createElement("button");
+      dayButton.type = "button";
+      dayButton.className =
+        "h-20 sm:h-24 p-2 rounded flex flex-col items-start justify-between text-left transition-colors " +
+        (isCurrentMonth
+          ? "bg-surface-container-low text-on-surface hover:bg-surface-container"
+          : "bg-surface/50 text-outline opacity-50 hover:opacity-80");
+      if (isToday) {
+        dayButton.classList.add("bg-primary-fixed", "font-bold");
+      }
+      if (isSelected) {
+        dayButton.classList.add("ring-2", "ring-primary");
+      }
+      dayButton.setAttribute("aria-label", fullDateFormatter.format(date));
+      dayButton.setAttribute("aria-pressed", String(isSelected));
+
+      const dayNumber = document.createElement("span");
+      dayNumber.className = "font-label-sm text-label-sm font-semibold";
+      dayNumber.textContent = String(date.getDate());
+      dayButton.append(dayNumber);
+      dayButton.addEventListener("click", () => {
+        selectedDate = date;
+        if (!isCurrentMonth) {
+          visibleMonth = new Date(date.getFullYear(), date.getMonth(), 1);
+        }
+        renderCalendar();
+      });
+      calendarGrid.append(dayButton);
+    }
+  }
+
+  previousMonthButton?.addEventListener("click", () => {
+    visibleMonth = new Date(
+      visibleMonth.getFullYear(),
+      visibleMonth.getMonth() - 1,
+      1,
+    );
+    renderCalendar();
+  });
+  nextMonthButton?.addEventListener("click", () => {
+    visibleMonth = new Date(
+      visibleMonth.getFullYear(),
+      visibleMonth.getMonth() + 1,
+      1,
+    );
+    renderCalendar();
+  });
+  todayButton?.addEventListener("click", () => {
+    today = getLocalDate();
+    selectedDate = new Date(today);
+    visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+    renderCalendar();
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState !== "visible") return;
+    const currentLocalDate = getLocalDate();
+    if (isSameDate(currentLocalDate, today)) return;
+
+    const wasViewingCurrentMonth =
+      visibleMonth.getFullYear() === today.getFullYear() &&
+      visibleMonth.getMonth() === today.getMonth();
+    const wasSelectedToday = isSameDate(selectedDate, today);
+    today = currentLocalDate;
+    if (wasSelectedToday) selectedDate = new Date(today);
+    if (wasViewingCurrentMonth) {
+      visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+    }
+    renderCalendar();
+  });
+
+  renderCalendar();
+}
+
 document.querySelectorAll(".filter-chip").forEach((button) => {
   button.addEventListener("click", function () {
     const isSelected = this.getAttribute("aria-pressed") === "true";
