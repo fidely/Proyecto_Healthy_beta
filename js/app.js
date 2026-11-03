@@ -87,7 +87,7 @@ if (calendarGrid && calendarMonthTitle) {
       const dayButton = document.createElement("button");
       dayButton.type = "button";
       dayButton.className =
-        "h-20 sm:h-24 p-2 rounded flex flex-col items-start justify-between text-left transition-colors " +
+        "agenda-calendar-day rounded flex flex-col items-start justify-between text-left transition-colors " +
         (isCurrentMonth
           ? "bg-surface-container-low text-on-surface hover:bg-surface-container"
           : "bg-surface/50 text-outline opacity-50 hover:opacity-80");

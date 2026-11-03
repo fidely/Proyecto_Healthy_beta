@@ -69,8 +69,8 @@ header nav[data-active-classes] > a {
   width: 92%;
 }
 
-.clinic-map-background {
-  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCllYFG4u1u0nxzdvDZH31y8slITILFpJVGKb_CWVggtfDfy--4BqWccURnJlzHzSdLDYVgu2KDX6UP0IdiMzI4yfPisJyMKpkiiCfHWPeH3-IFjA-TJcTJAteTNN2pxIMoEuPlp92RfTao92kwSYOE_jzQHfmjVlR3zzanKFXzaSHRycdRDmJ1Bn5orRaE1ee-OEmLKJT6H7AfygbEg86SqzyMPTQJPhOt9X3WAot_piBwjrr40jY_wg");
+.clinic-map {
+  background: #e7eefb;
 }
 
 [data-logout] {
@@ -89,5 +89,47 @@ header .group:focus-within [data-logout] {
   header .group [data-logout] {
     opacity: 1;
     pointer-events: auto;
+  }
+}
+/* Ajustes para el mapa interactivo de Leaflet */
+.clinic-map {
+  background: #e7eefb;
+  position: relative;
+  z-index: 1; /* Mantiene la capa base del mapa por debajo de tus controles */
+}
+
+/* Evita que los popups o elementos de Leaflet rompan los bordes redondeados */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: inherit;
+  font-family: inherit; /* Utiliza la misma tipografía (Plus Jakarta Sans) de tu app */
+}
+
+/* Ajuste de controles de zoom dentro del mapa */
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  color: #1a1a1a !important;
+  border: none !important;
+}
+
+#calendar-grid > * {
+  height: 2.5rem;
+  min-height: 2.5rem;
+  padding: 0.25rem;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  #calendar-grid > * {
+    height: 3rem;
+    min-height: 3rem;
   }
 }

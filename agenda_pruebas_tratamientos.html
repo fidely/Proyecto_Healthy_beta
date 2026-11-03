@@ -21,6 +21,10 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="image.png/screen.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="js/tailwind-config.js"></script>
@@ -136,8 +140,8 @@
       </div>
     </header>
     <main class="w-full pt-20 flex-1 bg-surface">
-      <div class="max-w-[1200px] mx-auto px-margin py-space-xl">
-        <div class="flex flex-col w-full gap-space-xl">
+      <div class="max-w-[1200px] mx-auto px-margin py-space-lg">
+        <div class="flex flex-col w-full gap-space-lg">
           <!-- Top Banner / Editorial Introduction & Privacy Statement -->
           <section
             class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-high p-space-lg md:p-space-xl shadow-sm"
@@ -392,15 +396,15 @@
           </section>
           <!-- Interactive Monthly Calendar & Side Action Panel -->
           <section
-            class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start"
+            class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start"
           >
             <!-- Main Calendar Area (8 cols) -->
             <div
-              class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm"
+              class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-sm shadow-sm"
             >
               <!-- Calendar Header -->
               <div
-                class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-lg"
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-sm"
               >
                 <div>
                   <div class="flex items-center gap-space-sm">
@@ -428,16 +432,16 @@
                 >
                   <button
                     aria-label="Mes anterior"
-                    class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all"
+                    class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all"
                     id="calendar-prev-month-btn"
                     type="button"
                   >
-                    <span class="material-symbols-outlined text-[18px]"
+                    <span class="material-symbols-outlined text-[16px]"
                       >chevron_left</span
                     >
                   </button>
                   <button
-                    class="font-label-md text-label-md px-space-sm text-on-surface font-semibold hover:text-primary"
+                    class="font-label-sm text-label-sm px-space-xs text-on-surface font-semibold hover:text-primary"
                     id="calendar-today-btn"
                     type="button"
                   >
@@ -445,11 +449,11 @@
                   </button>
                   <button
                     aria-label="Mes siguiente"
-                    class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all"
+                    class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all"
                     id="calendar-next-month-btn"
                     type="button"
                   >
-                    <span class="material-symbols-outlined text-[18px]"
+                    <span class="material-symbols-outlined text-[16px]"
                       >chevron_right</span
                     >
                   </button>
@@ -457,7 +461,7 @@
               </div>
               <!-- Calendar Legend -->
               <div
-                class="flex flex-wrap items-center gap-space-md p-space-sm mb-space-md bg-surface-container-low rounded-lg"
+                class="flex flex-wrap items-center gap-space-xs p-space-xs mb-space-xs bg-surface-container-low rounded-lg"
               >
                 <div class="flex items-center gap-2">
                   <span
@@ -487,7 +491,7 @@
               </div>
               <!-- Week Days Header -->
               <div
-                class="grid grid-cols-7 gap-2 text-center font-label-md text-label-md text-on-surface-variant mb-2"
+                class="grid grid-cols-7 gap-0.5 text-center font-label-sm text-label-sm text-on-surface-variant mb-0.5"
               >
                 <span class="py-1">Lun</span>
                 <span class="py-1">Mar</span>
@@ -498,7 +502,7 @@
                 <span class="py-1 text-tertiary font-bold">Dom</span>
               </div>
               <!-- Calendar Grid Cells -->
-              <div class="grid grid-cols-7 gap-2" id="calendar-grid">
+              <div class="grid grid-cols-7 gap-0.5" id="calendar-grid">
                 <!-- Prior month trailing days (Aug 26 - Sep 01) -->
                 <div
                   class="h-20 sm:h-24 p-2 rounded bg-surface/50 text-outline flex flex-col justify-between opacity-40"
@@ -1211,30 +1215,33 @@
                     género.
                   </p>
                 </div>
-                <!-- Interactive Map Element with data-location -->
-                <div
-                  class="w-full h-48 bg-cover bg-center rounded-lg shadow-inner relative overflow-hidden flex flex-col justify-end p-space-sm clinic-map-background"
-                  data-alt="Warm luminous map visualization showing friendly community health clinic locations with soft purple pins and clean modern cartography in Madrid."
-                  data-location="Madrid, Spain LGBT Sexual Health Center"
-                >
+                <div class="relative w-full h-48 rounded-lg shadow-inner overflow-hidden">
                   <div
-                    class="bg-surface/90 backdrop-blur-md p-space-sm rounded flex items-center justify-between shadow-sm"
+                    aria-label="Mapa interactivo de OpenStreetMap"
+                    class="clinic-map h-full w-full"
+                    id="clinic-map"
+                    tabindex="0"
+                  ></div>
+                  <div
+                    class="absolute bottom-2 left-2 right-2 z-[1000] bg-surface/90 backdrop-blur-md p-space-sm rounded flex items-center justify-between gap-space-xs shadow-sm"
                   >
-                    <div class="flex items-center gap-space-xs">
-                      <span
-                        class="material-symbols-outlined text-primary text-[20px]"
-                        >pin_drop</span
-                      >
-                      <span
-                        class="font-label-sm text-label-sm text-on-surface font-semibold"
-                        >3 centros verificados cercanos</span
-                      >
-                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface font-semibold"
+                      id="clinic-map-status"
+                      role="status"
+                      aria-live="polite"
+                      >Buscando tu ubicación...</span
+                    >
                     <button
-                      class="font-label-sm text-label-sm text-primary font-bold hover:underline"
+                      aria-label="Actualizar mi ubicación"
+                      class="w-8 h-8 shrink-0 rounded-full flex items-center justify-center text-primary hover:bg-surface-container-low transition-colors"
+                      id="clinic-map-locate-btn"
+                      title="Actualizar mi ubicación"
                       type="button"
                     >
-                      Explorar
+                      <span class="material-symbols-outlined text-[18px]"
+                        >my_location</span
+                      >
                     </button>
                   </div>
                 </div>
@@ -1966,5 +1973,7 @@
       </div>
     </footer>
       <script src="js/app.js"></script>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script src="js/clinics-map.js"></script>
   </body>
 </html>
